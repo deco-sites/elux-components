@@ -205,7 +205,7 @@ function Header({
           : HEADER_HEIGHT_MOBILE,
       }}
     >
-      <div class="bg-base-100 fixed w-full z-40">
+      <div class="bg-base-100 w-full z-40">
         {alerts.length > 0 && <Alert alerts={alerts} />}
         {device === "desktop"
           ? <Desktop logo={logo} {...props} />

@@ -16,6 +16,9 @@ export default {
           "100%": { transform: "translateX(-50%)" },
         },
       },
+      fontFamily: {
+        "noto-sans": ["Noto Sans", "sans-serif"],
+      },
     },
   },
 };
