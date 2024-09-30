@@ -1,11 +1,11 @@
 import Image from "apps/website/components/Image.tsx";
-import type { LoadingFallbackProps } from "deco/mod.ts";
 import Section, {
   type Props as SectionHeaderProps,
 } from "../../components/ui/Section.tsx";
 import Slider from "../../components/ui/Slider.tsx";
 import { clx } from "../../sdk/clx.ts";
 import { type SectionProps } from "@deco/deco";
+import { type LoadingFallbackProps } from "@deco/deco";
 export interface Data {
   id: string;
   permalink: string;

@@ -1,3 +1,9 @@
+/// <reference no-default-lib="true"/>
+/// <reference lib="deno.ns" />
+/// <reference lib="esnext" />
+/// <reference lib="dom" />
+/// <reference lib="dom.iterable" />
+
 import { type AppContext } from "../../apps/site.ts";
 import { type Minicart } from "../../components/minicart/Minicart.tsx";
 import { usePlatform } from "../../sdk/usePlatform.tsx";

@@ -5,8 +5,8 @@ import Section, {
 } from "../../components/ui/Section.tsx";
 import Slider from "../../components/ui/Slider.tsx";
 import { clx } from "../../sdk/clx.ts";
-import { LoadingFallbackProps } from "deco/mod.ts";
 import { useDevice } from "@deco/deco/hooks";
+import { type LoadingFallbackProps } from "@deco/deco";
 /** @titleBy label */
 export interface Item {
   image: ImageWidget;

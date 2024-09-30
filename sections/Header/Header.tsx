@@ -1,7 +1,6 @@
 import type { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
-import { LoadingFallbackProps } from "deco/mod.ts";
 import Alert from "../../components/header/Alert.tsx";
 import Bag from "../../components/header/Bag.tsx";
 import Menu from "../../components/header/Menu.tsx";
@@ -22,6 +21,7 @@ import {
   SIDEMENU_DRAWER_ID,
 } from "../../constants.ts";
 import { useDevice } from "@deco/deco/hooks";
+import { type LoadingFallbackProps } from "@deco/deco";
 export interface Logo {
   src: ImageWidget;
   alt: string;

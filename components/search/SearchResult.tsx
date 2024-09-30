@@ -1,3 +1,9 @@
+/// <reference no-default-lib="true"/>
+/// <reference lib="deno.ns" />
+/// <reference lib="esnext" />
+/// <reference lib="dom" />
+/// <reference lib="dom.iterable" />
+
 import type { ProductListingPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductCard from "../../components/product/ProductCard.tsx";
