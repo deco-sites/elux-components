@@ -1,4 +1,4 @@
-import { MINICART_DRAWER_ID } from "../../constants.ts";
+import { MINICART_DRAWER_ID } from "../../constants.tsx";
 import { useId } from "../../sdk/useId.ts";
 import Icon from "../ui/Icon.tsx";
 import { useScript } from "@deco/deco/hooks";
