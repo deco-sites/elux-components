@@ -1,13 +1,13 @@
 import { GAP_SIZES, TEXT_COLORS } from "../../constants.tsx";
 import { clx } from "../../sdk/clx.ts";
-import { Colors, FontSize, GapSizes } from "../../sdk/types.ts";
+import { GapSizes, TextProps } from "../../sdk/types.ts";
 import Container, { SpacingConfig } from "../container/Container.tsx";
 
 export interface Props {
   /**
    * @title Title props
    */
-  title: TitleProps;
+  title: TextProps;
   /**
    * @title Content
    * @format rich-text
@@ -21,21 +21,6 @@ export interface Props {
    * @title Spacing config
    */
   spacing?: SpacingConfig;
-}
-
-interface TitleProps {
-  /**
-   * @title Text
-   */
-  text: string;
-  /**
-   * @title Font color
-   */
-  fontColor: Colors;
-  /**
-   * @title Font size
-   */
-  fontSize: FontSize;
 }
 
 export default function Policy({ title, content, spacing, gap = "0" }: Props) {

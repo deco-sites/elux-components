@@ -156,3 +156,10 @@ export const GAP_SIZES = {
   "6": "gap-6",
   "8": "gap-8",
 };
+
+export const GRID_SIZES_DESKTOP = {
+  "1": "sm:grid-cols-1",
+  "2": "sm:grid-cols-2",
+  "3": "sm:grid-cols-3",
+  "4": "sm:grid-cols-4",
+};
