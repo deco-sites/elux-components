@@ -45,19 +45,20 @@ export default function Policy({ title, content, spacing, gap = "0" }: Props) {
       class={clx(
         "font-noto-sans flex flex-col",
         GAP_SIZES[gap],
-        "px-4 lg:px-0 container",
+        "px-6 lg:px-0 container",
       )}
     >
       <h1
         class={clx(
           TEXT_COLORS[title.fontColor ?? "primary"],
           title.fontSize,
+          "font-bold",
         )}
       >
         {title.text}
       </h1>
       <div
-        class="policy-content  max-w-[863px] text-secondary font-extralight"
+        class="policy-content  max-w-[863px] text-secondary text-sm"
         dangerouslySetInnerHTML={{ __html: content }}
       >
       </div>

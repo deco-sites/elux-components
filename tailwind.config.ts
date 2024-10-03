@@ -26,6 +26,9 @@ export default {
       fontFamily: {
         "noto-sans": ["Noto Sans", "sans-serif"],
       },
+      fontSize: {
+        "sm": ["0.875rem", "1.4rem"], //14px
+      },
       padding: {
         "6.5": "1.625rem", /* 26px */
         "7.5": "1.875rem", /* 30px */

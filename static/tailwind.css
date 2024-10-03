@@ -459,7 +459,9 @@ html {
 
   /* Allow changing font family via CMS */
   html {
-    font-family: var(--font-family);
+    font-family: "Noto Sans";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   /** Remove default styles from input[type=number] */
@@ -4750,7 +4752,7 @@ details.collapse summary::-webkit-details-marker {
 }
 .\!text-sm {
   font-size: 0.875rem !important;
-  line-height: 1.25rem !important;
+  line-height: 1.4rem !important;
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -4813,7 +4815,7 @@ details.collapse summary::-webkit-details-marker {
 }
 .text-sm {
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1.4rem;
 }
 .text-sm\/4 {
   font-size: 0.875rem;
@@ -4832,9 +4834,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .font-bold {
   font-weight: 700;
-}
-.font-extralight {
-  font-weight: 200;
 }
 .font-light {
   font-weight: 300;
@@ -5128,6 +5127,20 @@ details.collapse summary::-webkit-details-marker {
   to {
     --dot-progress: 100%
   }
+}
+
+.policy-content a {
+  text-decoration-line: underline;
+}
+
+.policy-content h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: revert-layer; 
+  font-weight: revert-layer;
 }
 
 .invalid\:input-error:invalid {
@@ -5994,7 +6007,7 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:text-sm {
     font-size: 0.875rem;
-    line-height: 1.25rem;
+    line-height: 1.4rem;
   }
 }
 
