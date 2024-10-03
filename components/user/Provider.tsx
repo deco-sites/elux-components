@@ -1,5 +1,5 @@
 import { Person } from "apps/commerce/types.ts";
-import { USER_ID } from "../../constants.ts";
+import { USER_ID } from "../../constants.tsx";
 import { useScript } from "@deco/deco/hooks";
 const onLoad = (jsonID: string) => {
   const script = document.getElementById(jsonID) as HTMLScriptElement;

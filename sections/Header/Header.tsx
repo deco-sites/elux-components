@@ -19,7 +19,7 @@ import {
   SEARCHBAR_POPUP_ID,
   SIDEMENU_CONTAINER_ID,
   SIDEMENU_DRAWER_ID,
-} from "../../constants.ts";
+} from "../../constants.tsx";
 import { useDevice } from "@deco/deco/hooks";
 import { type LoadingFallbackProps } from "@deco/deco";
 export interface Logo {

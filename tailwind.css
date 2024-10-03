@@ -6,7 +6,8 @@
 
   /* Allow changing font family via CMS */
   html {
-    font-family: var(--font-family);
+    font-family: "Noto Sans";
+    @apply antialiased;
   }
 
   /** Remove default styles from input[type=number] */
@@ -36,4 +37,18 @@
   to {
     --dot-progress: 100%
   }
+}
+
+.policy-content a {
+  @apply underline;
+}
+
+.policy-content h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: revert-layer; 
+  font-weight: revert-layer;
 }

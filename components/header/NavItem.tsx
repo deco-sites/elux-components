@@ -3,7 +3,7 @@ import Image from "apps/website/components/Image.tsx";
 import {
   HEADER_HEIGHT_DESKTOP,
   NAVBAR_HEIGHT_DESKTOP,
-} from "../../constants.ts";
+} from "../../constants.tsx";
 
 function NavItem({ item }: { item: SiteNavigationElement }) {
   const { url, name, children } = item;
