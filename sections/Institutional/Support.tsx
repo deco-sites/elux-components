@@ -1,6 +1,7 @@
 import Icon, { AvailableIcons } from "../../components/ui/Icon.tsx";
 import {
-  GAP_SIZES,
+  GAP_X_SIZES,
+  GRID_COL_SPAN_DESKTOP,
   GRID_SIZES_DESKTOP,
   TEXT_COLORS,
 } from "../../constants.tsx";
@@ -102,6 +103,7 @@ export default function Support(
   { title, description, cards, cardsStyling, spacing }: Props,
 ) {
   const { grid, text, icons, gap } = cardsStyling;
+  const columns = Number(grid);
   return (
     <Container
       spacing={spacing}
@@ -134,33 +136,48 @@ export default function Support(
         class={clx(
           "mt-12 grid grid-cols-1",
           GRID_SIZES_DESKTOP[grid],
-          GAP_SIZES[gap],
+          GAP_X_SIZES[gap],
         )}
       >
-        {cards.map(({ cardItems, title }) => (
-          <div
-            class={clx(
-              "flex flex-col gap-4 pb-10",
-              TEXT_COLORS[text.fontColor],
-              text.fontSize,
-            )}
-          >
-            <span class="text-base font-bold">{title}</span>
-            <div class="flex flex-col gap-3">
-              {cardItems.map(({ href, icon, label }) => (
-                <div class="flex flex-row gap-3 sm:gap-4">
-                  <Icon
-                    id={icon}
-                    width={icons.iconSize}
-                    height={icons.iconSize}
-                    size={icons.iconSize}
-                    class={TEXT_COLORS[icons.iconColor]}
-                  />
-                  <a href={href}>{label}</a>
-                </div>
-              ))}
+        {cards.map(({ cardItems, title }, index) => (
+          <>
+            <div
+              class={clx(
+                "flex flex-col gap-4 pb-6 md:pb-10",
+                TEXT_COLORS[text.fontColor],
+                text.fontSize,
+                index >= columns ? "md:pt-8" : "",
+                "max-md:border-b max-md:border-base-200 max-md:pt-6",
+                "max-md:last:border-b-0 max-md:first:pt-0",
+              )}
+            >
+              <span class="text-base font-bold">{title}</span>
+              <div class="flex flex-col gap-3">
+                {cardItems.map(({ href, icon, label }) => (
+                  <div class="flex flex-row gap-3 sm:gap-4 items-center">
+                    <Icon
+                      id={icon}
+                      width={icons.iconSize}
+                      height={icons.iconSize}
+                      size={icons.iconSize}
+                      class={TEXT_COLORS[icons.iconColor]}
+                    />
+                    <a href={href}>{label}</a>
+                  </div>
+                ))}
+              </div>
+              <div class="flex-grow" />
             </div>
-          </div>
+            {index % columns === columns - 1 &&
+              index !== cards.length - 1 && (
+              <div
+                class={clx(
+                  "hidden md:block md:h-px md:bg-base-200",
+                  GRID_COL_SPAN_DESKTOP[grid],
+                )}
+              />
+            )}
+          </>
         ))}
       </div>
     </Container>

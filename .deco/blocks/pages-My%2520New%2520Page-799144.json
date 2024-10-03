@@ -1,5 +1,4 @@
 {
-  "name": "My New Page",
   "path": "/centros-de-servicio",
   "sections": [
     {
@@ -36,125 +35,263 @@
       }
     },
     {
-      "__resolveType": "site/sections/Institutional/Support.tsx",
-      "title": {
-        "text": "Asistencia Técnica",
-        "fontColor": "primary",
-        "fontSize": "text-xl"
-      },
-      "description": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel ultricies leo.",
-        "fontColor": "secondary",
-        "fontSize": "text-sm"
-      },
-      "cardsStyling": {
-        "icons": {
-          "iconSize": 24,
-          "iconColor": "primary"
-        },
-        "text": {
-          "fontColor": "secondary",
-          "fontSize": "text-base"
-        },
-        "grid": "3",
-        "gap": "5"
-      },
-      "spacing": {
-        "desktop": {
-          "top": {
-            "behavior": "split",
-            "size": "small"
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Institutional/Support.tsx",
+            "title": {
+              "text": "Asistencia Técnica",
+              "fontColor": "primary",
+              "fontSize": "text-xl"
+            },
+            "description": {
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel ultricies leo.",
+              "fontColor": "secondary",
+              "fontSize": "text-sm"
+            },
+            "cardsStyling": {
+              "icons": {
+                "iconSize": 18,
+                "iconColor": "primary"
+              },
+              "text": {
+                "fontColor": "secondary",
+                "fontSize": "text-sm"
+              },
+              "grid": "3",
+              "gap": "5"
+            },
+            "spacing": {
+              "desktop": {
+                "top": {
+                  "behavior": "split",
+                  "size": "small"
+                },
+                "bottom": {
+                  "behavior": "split",
+                  "size": "half-extra-small"
+                }
+              },
+              "mobile": {
+                "top": {
+                  "behavior": "split",
+                  "size": "extra-large"
+                },
+                "bottom": {
+                  "behavior": "split",
+                  "size": "half-extra-small"
+                }
+              }
+            },
+            "cards": [
+              {
+                "cardItems": [
+                  {
+                    "icon": "headset-frigidaire",
+                    "label": "0000 000 0000"
+                  },
+                  {
+                    "icon": "email-frigidaire",
+                    "label": "email@electrolux.com",
+                    "href": "mailto:email@electrolux.com"
+                  }
+                ],
+                "title": "Country"
+              },
+              {
+                "cardItems": [
+                  {
+                    "icon": "headset-frigidaire",
+                    "label": "0000 000 0000"
+                  },
+                  {
+                    "icon": "headset-frigidaire",
+                    "label": "0000 000 0000"
+                  },
+                  {
+                    "icon": "email-frigidaire",
+                    "label": "email@electrolux.com",
+                    "href": "mailto:email@electrolux.com"
+                  }
+                ],
+                "title": "Country"
+              },
+              {
+                "cardItems": [
+                  {
+                    "icon": "headset-frigidaire",
+                    "label": "0000 000 0000"
+                  },
+                  {
+                    "icon": "email-frigidaire",
+                    "label": "email@electrolux.com",
+                    "href": "mailto:email@electrolux.com"
+                  }
+                ],
+                "title": "Country"
+              },
+              {
+                "cardItems": [
+                  {
+                    "icon": "headset-frigidaire",
+                    "label": "0000 000 0000"
+                  },
+                  {
+                    "icon": "email-frigidaire",
+                    "label": "email@electrolux.com",
+                    "href": "mailto:email@electrolux.com"
+                  }
+                ],
+                "title": "Country"
+              },
+              {
+                "cardItems": [
+                  {
+                    "icon": "headset-frigidaire",
+                    "label": "0000 000 0000"
+                  },
+                  {
+                    "icon": "email-frigidaire",
+                    "label": "email@electrolux.com",
+                    "href": "mailto:email@electrolux.com"
+                  }
+                ],
+                "title": "Country"
+              }
+            ]
           },
-          "bottom": {
-            "behavior": "split",
-            "size": "none"
+          "rule": {
+            "__resolveType": "Mobile"
           }
         },
-        "mobile": {
-          "top": {
-            "behavior": "split",
-            "size": "extra-large"
+        {
+          "value": {
+            "__resolveType": "site/sections/Institutional/Support.tsx",
+            "title": {
+              "text": "Asistencia Técnica",
+              "fontColor": "primary",
+              "fontSize": "text-xl"
+            },
+            "description": {
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel ultricies leo.",
+              "fontColor": "secondary",
+              "fontSize": "text-sm"
+            },
+            "cardsStyling": {
+              "icons": {
+                "iconSize": 24,
+                "iconColor": "primary"
+              },
+              "text": {
+                "fontColor": "secondary",
+                "fontSize": "text-base"
+              },
+              "grid": "3",
+              "gap": "5"
+            },
+            "spacing": {
+              "desktop": {
+                "top": {
+                  "behavior": "split",
+                  "size": "small"
+                },
+                "bottom": {
+                  "behavior": "split",
+                  "size": "half-extra-small"
+                }
+              },
+              "mobile": {
+                "top": {
+                  "behavior": "split",
+                  "size": "extra-large"
+                },
+                "bottom": {
+                  "behavior": "split",
+                  "size": "half-extra-small"
+                }
+              }
+            },
+            "cards": [
+              {
+                "cardItems": [
+                  {
+                    "icon": "headset-frigidaire",
+                    "label": "0000 000 0000"
+                  },
+                  {
+                    "icon": "email-frigidaire",
+                    "label": "email@electrolux.com",
+                    "href": "mailto:email@electrolux.com"
+                  }
+                ],
+                "title": "Country"
+              },
+              {
+                "cardItems": [
+                  {
+                    "icon": "headset-frigidaire",
+                    "label": "0000 000 0000"
+                  },
+                  {
+                    "icon": "headset-frigidaire",
+                    "label": "0000 000 0000"
+                  },
+                  {
+                    "icon": "email-frigidaire",
+                    "label": "email@electrolux.com",
+                    "href": "mailto:email@electrolux.com"
+                  }
+                ],
+                "title": "Country"
+              },
+              {
+                "cardItems": [
+                  {
+                    "icon": "headset-frigidaire",
+                    "label": "0000 000 0000"
+                  },
+                  {
+                    "icon": "email-frigidaire",
+                    "label": "email@electrolux.com",
+                    "href": "mailto:email@electrolux.com"
+                  }
+                ],
+                "title": "Country"
+              },
+              {
+                "cardItems": [
+                  {
+                    "icon": "headset-frigidaire",
+                    "label": "0000 000 0000"
+                  },
+                  {
+                    "icon": "email-frigidaire",
+                    "label": "email@electrolux.com",
+                    "href": "mailto:email@electrolux.com"
+                  }
+                ],
+                "title": "Country"
+              },
+              {
+                "cardItems": [
+                  {
+                    "icon": "headset-frigidaire",
+                    "label": "0000 000 0000"
+                  },
+                  {
+                    "icon": "email-frigidaire",
+                    "label": "email@electrolux.com",
+                    "href": "mailto:email@electrolux.com"
+                  }
+                ],
+                "title": "Country"
+              }
+            ]
           },
-          "bottom": {
-            "behavior": "split",
-            "size": "none"
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
           }
-        }
-      },
-      "cards": [
-        {
-          "cardItems": [
-            {
-              "icon": "headset-frigidaire",
-              "label": "0000 000 0000"
-            },
-            {
-              "icon": "email-frigidaire",
-              "label": "email@electrolux.com",
-              "href": "mailto:email@electrolux.com"
-            }
-          ],
-          "title": "Country"
-        },
-        {
-          "cardItems": [
-            {
-              "icon": "headset-frigidaire",
-              "label": "0000 000 0000"
-            },
-            {
-              "icon": "headset-frigidaire",
-              "label": "0000 000 0000"
-            },
-            {
-              "icon": "email-frigidaire",
-              "label": "email@electrolux.com",
-              "href": "mailto:email@electrolux.com"
-            }
-          ],
-          "title": "Country"
-        },
-        {
-          "cardItems": [
-            {
-              "icon": "headset-frigidaire",
-              "label": "0000 000 0000"
-            },
-            {
-              "icon": "email-frigidaire",
-              "label": "email@electrolux.com",
-              "href": "mailto:email@electrolux.com"
-            }
-          ],
-          "title": "Country"
-        },
-        {
-          "cardItems": [
-            {
-              "icon": "headset-frigidaire",
-              "label": "0000 000 0000"
-            },
-            {
-              "icon": "email-frigidaire",
-              "label": "email@electrolux.com",
-              "href": "mailto:email@electrolux.com"
-            }
-          ],
-          "title": "Country"
-        },
-        {
-          "cardItems": [
-            {
-              "icon": "headset-frigidaire",
-              "label": "0000 000 0000"
-            },
-            {
-              "icon": "email-frigidaire",
-              "label": "email@electrolux.com",
-              "href": "mailto:email@electrolux.com"
-            }
-          ],
-          "title": "Country"
         }
       ]
     }
@@ -162,5 +299,6 @@
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },
-  "__resolveType": "website/pages/Page.tsx"
+  "__resolveType": "website/pages/Page.tsx",
+  "name": "List of Tech Support"
 }
