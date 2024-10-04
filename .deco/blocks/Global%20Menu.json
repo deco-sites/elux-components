@@ -1,0 +1,190 @@
+{
+  "__resolveType": "site/loaders/menu.ts",
+  "menu": [
+    {
+      "collums": [
+        {
+          "categories": [
+            {
+              "icon": "search",
+              "navItems": [
+                {
+                  "icon": "search",
+                  "title": "One Door",
+                  "link": "/"
+                },
+                {
+                  "icon": "search",
+                  "title": "Two Doors",
+                  "link": "/"
+                },
+                {
+                  "icon": "search",
+                  "title": "French Door",
+                  "link": "/"
+                },
+                {
+                  "icon": "search",
+                  "title": "Side by Side",
+                  "link": "/"
+                },
+                {
+                  "icon": "search",
+                  "title": "Freezers",
+                  "link": "/"
+                },
+                {
+                  "icon": "search",
+                  "title": "Wine Cellars",
+                  "link": "/"
+                }
+              ],
+              "title": "Refrigeration",
+              "link": "/"
+            }
+          ]
+        },
+        {
+          "categories": [
+            {
+              "icon": "search",
+              "navItems": [
+                {
+                  "icon": "search",
+                  "title": "Kitchens / Stoves",
+                  "link": "/"
+                },
+                {
+                  "icon": "search",
+                  "title": "Grills / Table",
+                  "link": "/"
+                },
+                {
+                  "icon": "search",
+                  "title": "Microondas",
+                  "link": "/"
+                },
+                {
+                  "icon": "search",
+                  "title": "Bells",
+                  "link": "/"
+                },
+                {
+                  "icon": "search",
+                  "title": "Ovens",
+                  "link": "/"
+                }
+              ],
+              "title": "Kitchens",
+              "link": "/"
+            }
+          ]
+        },
+        {
+          "categories": [
+            {
+              "icon": "search",
+              "navItems": [
+                {
+                  "icon": "search",
+                  "title": "Recessed",
+                  "link": "/"
+                }
+              ],
+              "title": "Dishwasher",
+              "link": "/"
+            },
+            {
+              "icon": "search",
+              "navItems": [
+                {
+                  "icon": "search",
+                  "title": "xxx",
+                  "link": "/"
+                }
+              ],
+              "title": "Small  Appliances",
+              "link": "/"
+            }
+          ]
+        }
+      ],
+      "title": "kitchen",
+      "link": "/",
+      "icon": "search"
+    },
+    {
+      "collums": [],
+      "title": "Washing area",
+      "link": "/",
+      "icon": "search"
+    },
+    {
+      "collums": [],
+      "title": "Home well-being",
+      "link": "/",
+      "icon": "search"
+    }
+  ],
+  "extraLinks": [
+    {
+      "links": [
+        {
+          "icon": "search",
+          "title": "Where to buy",
+          "link": "/"
+        },
+        {
+          "icon": "search",
+          "title": "List of Technical Support",
+          "link": "/"
+        },
+        {
+          "icon": "search",
+          "title": "Contact Form",
+          "link": "/"
+        }
+      ],
+      "title": "Support",
+      "icon": "search"
+    },
+    {
+      "links": [
+        {
+          "icon": "search",
+          "title": "Blog Latin America",
+          "link": "/"
+        },
+        {
+          "icon": "search",
+          "title": "About us",
+          "link": "/"
+        }
+      ],
+      "title": "Frigidaire",
+      "icon": "search"
+    }
+  ],
+  "languages": {
+    "title": "EN",
+    "links": [
+      {
+        "icon": "search",
+        "title": "English",
+        "link": "/"
+      },
+      {
+        "icon": "search",
+        "title": "Español",
+        "link": "/"
+      }
+    ],
+    "icon": "search"
+  },
+  "mobile": {
+    "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/elux-nola-us/7b8ff11a-6d0d-4231-98a5-d27f235e06e5/Logo-Default.png",
+    "textGoBack": "Return"
+  },
+  "menuText": "Todas las categorias",
+  "allCategoriesText": "Categories"
+}
