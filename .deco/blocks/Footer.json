@@ -1,85 +1,129 @@
 {
   "__resolveType": "site/sections/Footer/Footer.tsx",
-  "links": [
+  "collumns": [
     {
-      "title": "Our Company",
-      "children": [
+      "categories": [
         {
-          "title": "About us",
-          "href": "#"
-        },
-        {
-          "title": "Our blog",
-          "href": "#"
-        },
-        {
-          "title": "Stores",
-          "href": "#"
-        },
-        {
-          "title": "Work with us",
-          "href": "#"
-        }
-      ],
-      "href": "#"
-    },
-    {
-      "title": "Orders & Purchases",
-      "href": "#",
-      "children": [
-        {
-          "title": "Check order status",
-          "href": "#"
-        },
-        {
-          "title": "Return and exchanges",
-          "href": "#"
-        },
-        {
-          "title": "Product retail",
-          "href": "#"
-        },
-        {
-          "title": "Gift cards",
-          "href": "#"
+          "type": "text",
+          "items": [
+            {
+              "title": "Cocina",
+              "link": "/",
+              "icon": "search"
+            },
+            {
+              "title": "Área de lavado",
+              "link": "/",
+              "icon": "search"
+            },
+            {
+              "title": "Bienestar del hogar",
+              "link": "/",
+              "icon": "search"
+            }
+          ],
+          "title": "Product Categories",
+          "link": "/"
         }
       ]
     },
     {
-      "title": "Support & Services",
-      "href": "#",
-      "children": [
+      "categories": [
         {
-          "title": "Support Center",
-          "href": "#"
-        },
-        {
-          "title": "Schedule a service",
-          "href": "#"
-        },
-        {
-          "title": "Contact us",
-          "href": "#"
+          "type": "text",
+          "items": [
+            {
+              "title": "Where to buy",
+              "link": "/",
+              "icon": "search"
+            },
+            {
+              "title": "List of Technical Support",
+              "link": "/",
+              "icon": "search"
+            },
+            {
+              "title": "Contact Form",
+              "link": "/",
+              "icon": "search"
+            }
+          ],
+          "title": "Support",
+          "link": "/"
         }
       ]
     },
     {
-      "title": "Support & Services",
-      "children": [
+      "categories": [
         {
-          "title": "Support Center",
-          "href": "#"
-        },
-        {
-          "title": "Schedule a service",
-          "href": "#"
-        },
-        {
-          "title": "Contact us",
-          "href": "#"
+          "type": "text",
+          "items": [
+            {
+              "title": "Privacy Policy",
+              "link": "/politica-de-privacidad",
+              "icon": "search"
+            },
+            {
+              "title": "Warranty Policy",
+              "link": "/politica-de-privacidad",
+              "icon": "search"
+            }
+          ],
+          "title": "Policies and Guarantees",
+          "link": "/"
         }
-      ],
-      "href": "#"
+      ]
+    },
+    {
+      "categories": [
+        {
+          "type": "text",
+          "items": [
+            {
+              "link": "/",
+              "title": "Blog Latin America"
+            },
+            {
+              "link": "/",
+              "title": "About us"
+            }
+          ],
+          "title": "Frigidaire",
+          "link": "/"
+        },
+        {
+          "type": "social",
+          "items": [
+            {
+              "icon": "share",
+              "link": "/"
+            },
+            {
+              "icon": "share",
+              "link": "/"
+            }
+          ],
+          "title": "Social Media",
+          "link": "/"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/elux-nola-us/8581948a-3787-4f6a-9f45-da3b667221e8/Quality-Digital---Logo.png",
+      "link": "/",
+      "isBlank": true,
+      "width": 96,
+      "height": 44,
+      "alt": "Quality"
+    },
+    {
+      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/elux-nola-us/ed39e523-e3c9-441d-a87c-801469a6cd0c/Deco---Logo.png",
+      "link": "/",
+      "width": 96,
+      "height": 44,
+      "alt": "Deco.cx"
     }
   ],
   "social": [
@@ -162,6 +206,7 @@
       "href": "#"
     }
   ],
-  "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/f1faab73-e4ff-4037-b7c4-5d02bd0b1209",
-  "trademark": "TM & © 2023 Deco Storefront, Inc."
+  "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/elux-nola-us/9312f7e3-7202-4867-9e92-4dc2b7e60166/Logo.png",
+  "trademark": "TM & © 2023 Deco Storefront, Inc.",
+  "richText": "<p style=\"text-align: justify\">Las fotos son a modo ilustrativo. La venta de cualquiera de los productos publicados está sujeta a la verificación de stock. Los precios online y los planes de financiación para los productos presentados/publicados en <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://www.frigidaire.com.mx\">www.frigidaire.com.mx</a> son válidos exclusivamente para la compra vía internet en las páginas antes mencionadas. Las especificaciones técnicas y descripciones están sujetas a cambios sin previo aviso.</p>"
 }

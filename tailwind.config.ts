@@ -27,7 +27,8 @@ export default {
         "noto-sans": ["Noto Sans", "sans-serif"],
       },
       fontSize: {
-        "sm": ["0.875rem", "1.4rem"], //14px
+        "xxs": ["0.625rem", "1rem"], /* 10px */
+        "sm": ["0.875rem", "1.4rem"], /* 14px */
       },
       padding: {
         "6.5": "1.625rem", /* 26px */
@@ -42,6 +43,7 @@ export default {
         "18.5": "4.875rem", /* 78px */
         "22.5": "5.625rem", /* 90px */
         "26": "6.5rem", /* 104px */
+        "30": "7.5rem", /* 120px */
         "44.5": "11.25rem", /* 180px */
         "1/10": "10%",
         "18/10": "18%",
