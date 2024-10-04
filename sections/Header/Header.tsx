@@ -26,8 +26,8 @@ type Props = Omit<SectionProps, "alert">;
 const Desktop = ({ logo, menu }: Props) => {
   return (
     <>
-      <div class="flex flex-col gap-4 container h-[70px]">
-        <div class="flex justify-between items-center h-full">
+      <div class="flex flex-col gap-4  max-w-[1280px] mx-auto h-[70px]">
+        <div class="flex justify-between items-center h-full px-13.5">
           <a href="/" aria-label="Store logo">
             <Image
               src={logo.src}
@@ -43,7 +43,7 @@ const Desktop = ({ logo, menu }: Props) => {
         </div>
       </div>
       <div class="bg-base-200 h-[72px]">
-        <ul class="flex justify-start h-full">
+        <ul class="flex justify-start h-full max-w-[1280px] mx-auto">
           <li class="relative w-[182px]">
             <label
               htmlFor="open-menu"

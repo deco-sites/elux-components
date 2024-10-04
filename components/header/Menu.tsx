@@ -1,4 +1,3 @@
-import { useScript } from "deco/hooks/useScript.ts";
 import Icon from "../../components/ui/Icon.tsx";
 import { NAVBAR_HEIGHT_DESKTOP } from "../../constants.tsx";
 import type { ExtraMenu, Menu as MenuProps } from "../../loaders/menu.ts";
@@ -7,16 +6,12 @@ import { useId } from "../../sdk/useId.ts";
 import { useRadio } from "../../sdk/useRadio.tsx";
 import Column from "./Collum.tsx";
 import Image from "apps/website/components/Image.tsx";
-
-const ExtraLink = (
-  { title, links, isLast }: ExtraMenu & { isLast: boolean },
-) => {
+import { useScript } from "@deco/deco/hooks";
+const ExtraLink = ({ title, links, isLast }: ExtraMenu & {
+  isLast: boolean;
+}) => {
   return (
-    <div
-      class={clx(
-        !isLast && "border-b border-base-200",
-      )}
-    >
+    <div class={clx(!isLast && "border-b border-base-200")}>
       <p class="flex items-center h-9 text-base font-bold text-primary">
         {title}
       </p>
@@ -42,7 +37,6 @@ const ExtraLink = (
     </div>
   );
 };
-
 const MenuMobile = ({ links, extraLinks, mobile, menuText }: MenuProps) => {
   return (
     <>
@@ -70,10 +64,7 @@ const MenuMobile = ({ links, extraLinks, mobile, menuText }: MenuProps) => {
               {links.map(({ title, icon, color, link, isBlank, collums }) => {
                 const id = useId();
                 const onClick = (id: string) => {
-                  const input = document.getElementById(
-                    id,
-                  ) as HTMLInputElement;
-
+                  const input = document.getElementById(id) as HTMLInputElement;
                   input.checked = !input.checked;
                 };
                 return (
@@ -141,7 +132,6 @@ const MenuMobile = ({ links, extraLinks, mobile, menuText }: MenuProps) => {
     </>
   );
 };
-
 function Menu({ links, menuText }: MenuProps) {
   const { Radio } = useRadio("menu-desk");
   return (
@@ -211,10 +201,10 @@ function Menu({ links, menuText }: MenuProps) {
       </div>
       <div
         class={clx(
-          "h-screen w-screen absolute",
-          "group-has-[#open-menu:checked]/header:pointer-events-auto pointer-events-none",
+          "h-screen absolute",
+          "group-has-[#open-menu:checked]/header:pointer-events-auto pointer-events-none -left-full",
         )}
-        style={{ top: NAVBAR_HEIGHT_DESKTOP }}
+        style={{ top: NAVBAR_HEIGHT_DESKTOP, width: "calc(100vw + 100%)" }}
       >
         <div
           class={clx(
@@ -225,7 +215,5 @@ function Menu({ links, menuText }: MenuProps) {
     </>
   );
 }
-
 Menu.Mobile = MenuMobile;
-
 export default Menu;

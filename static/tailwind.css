@@ -3582,6 +3582,9 @@ details.collapse summary::-webkit-details-marker {
 .relative {
   position: relative;
 }
+.-left-full {
+  left: -100%;
+}
 .bottom-0 {
   bottom: 0px;
 }
@@ -4105,6 +4108,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .max-w-7xl {
   max-width: 80rem;
+}
+.max-w-\[1280px\] {
+  max-width: 1280px;
 }
 .max-w-\[139px\] {
   max-width: 139px;
@@ -4687,9 +4693,21 @@ details.collapse summary::-webkit-details-marker {
   padding-left: 0px;
   padding-right: 0px;
 }
+.px-13 {
+  padding-left: 3.375rem;
+  padding-right: 3.375rem;
+}
+.px-13\.5 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+.px-30 {
+  padding-left: 7.5rem;
+  padding-right: 7.5rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -4710,10 +4728,6 @@ details.collapse summary::-webkit-details-marker {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
-}
-.px-\[120px\] {
-  padding-left: 120px;
-  padding-right: 120px;
 }
 .px-\[12px\] {
   padding-left: 12px;
@@ -4909,9 +4923,6 @@ details.collapse summary::-webkit-details-marker {
   font-size: 8rem;
   line-height: 1;
 }
-.text-\[10px\] {
-  font-size: 10px;
-}
 .text-\[12px\] {
   font-size: 12px;
 }
@@ -4961,6 +4972,10 @@ details.collapse summary::-webkit-details-marker {
 }
 .text-xs {
   font-size: 0.75rem;
+  line-height: 1rem;
+}
+.text-xxs {
+  font-size: 0.625rem;
   line-height: 1rem;
 }
 .\!font-medium {

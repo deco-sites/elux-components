@@ -2,15 +2,12 @@ import { ExtraMenu } from "../../loaders/menu.ts";
 import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
 import Icon from "../ui/Icon.tsx";
-import { useScript } from "deco/hooks/useScript.ts";
-
+import { useScript } from "@deco/deco/hooks";
 function Dropdown({ icon, title, links }: ExtraMenu) {
   const id = useId();
-
   const setup = (id: string) => {
     const dropdown = document.getElementById(id) as HTMLUListElement;
     const elementWidth = dropdown.offsetWidth;
-
     dropdown.style.left = `calc(100% - ${elementWidth}px)`;
   };
   return (
@@ -55,5 +52,4 @@ function Dropdown({ icon, title, links }: ExtraMenu) {
     </div>
   );
 }
-
 export default Dropdown;

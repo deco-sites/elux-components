@@ -28,7 +28,7 @@ function Footer({
   collumns,
 }: Props) {
   return (
-    <footer class="px-[120px] py-14 mt-14 max-md:px-4 max-md:py-10 max-lg:flex-wrap">
+    <footer class="px-30 py-14 mt-14 max-md:px-4 max-md:py-10 max-lg:flex-wrap">
       <div class="flex flex-col gap-8">
         <Image src={logo} width={150} height={18} />
         <div class="flex justify-between gap-10 max-md:flex-col">
@@ -36,7 +36,7 @@ function Footer({
         </div>
         <div class="flex justify-between gap-10 lg:h-12 items-center max-lg:flex-wrap max-lg:justify-center">
           <div
-            class="text-[10px] text-info max-w-[684px] text-center"
+            class="text-xxs text-info max-w-[684px] text-center"
             dangerouslySetInnerHTML={{ __html: richText }}
           />
           <div class="flex items-center flex-shrink">
