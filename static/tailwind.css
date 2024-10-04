@@ -5722,6 +5722,10 @@ h6 {
   opacity: 0.5;
 }
 
+.group\/header:has(.hover-nav-item:hover) .group-has-\[\.hover-nav-item\:hover\]\/header\:opacity-50 {
+  opacity: 0.5;
+}
+
 @media not all and (min-width: 1024px) {
 
   .max-lg\:flex-wrap {
@@ -6233,6 +6237,10 @@ h6 {
 
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:gap-10 {
+    gap: 2.5rem;
   }
 
   .md\:gap-20 {

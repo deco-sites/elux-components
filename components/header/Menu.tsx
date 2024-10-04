@@ -63,19 +63,23 @@ const MenuMobile = ({ links, extraLinks, mobile, menuText }: MenuProps) => {
             <ul class="w-full h-full rounded-b-[4px]">
               {links.map(({ title, icon, color, link, isBlank, collums }) => {
                 const id = useId();
+                const hasAside = collums && collums.length > 0;
                 const onClick = (id: string) => {
                   const input = document.getElementById(id) as HTMLInputElement;
                   input.checked = !input.checked;
                 };
+                const onClickEvent = hasAside
+                  ? { "hx-on:click": useScript(onClick, id) }
+                  : {};
                 return (
                   <li class="group">
                     <input type="checkbox" class="hidden peer" id={id} />
                     <div
-                      hx-on:click={useScript(onClick, id)}
                       class={clx(
                         "text-base font-normal leading-none h-[54px] flex justify-between items-center peer-checked:bg-base-200",
                       )}
                       style={{ color: color }}
+                      {...onClickEvent}
                     >
                       <span class="flex items-center gap-2 h-full">
                         {icon && <Icon class="text-primary" id={icon} />}
@@ -92,7 +96,7 @@ const MenuMobile = ({ links, extraLinks, mobile, menuText }: MenuProps) => {
                         <Icon class="text-primary" id="chevron-right" />
                       </p>
                     </div>
-                    {collums && collums.length > 0 && (
+                    {hasAside && (
                       <aside
                         class={clx(
                           "-translate-x-full peer-checked:translate-x-0 transition-all",
@@ -208,7 +212,7 @@ function Menu({ links, menuText }: MenuProps) {
       >
         <div
           class={clx(
-            "z-40 group-has-[#open-menu:checked]/header:opacity-50 opacity-0 transition-opacity bg-black h-full w-full relative",
+            "z-40 group-has-[#open-menu:checked]/header:opacity-50 group-has-[.hover-nav-item:hover]/header:opacity-50 opacity-0 transition-opacity bg-black h-full w-full relative",
           )}
         />
       </div>
