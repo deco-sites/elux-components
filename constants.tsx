@@ -156,3 +156,28 @@ export const GAP_SIZES = {
   "6": "gap-6",
   "8": "gap-8",
 };
+
+export const GAP_X_SIZES = {
+  "0": "gap-x-0",
+  "1": "gap-x-1",
+  "2": "gap-x-2",
+  "3": "gap-x-3",
+  "4": "gap-x-4",
+  "5": "gap-x-5",
+  "6": "gap-x-6",
+  "8": "gap-x-8",
+};
+
+export const GRID_SIZES_DESKTOP = {
+  "1": "md:grid-cols-1",
+  "2": "md:grid-cols-2",
+  "3": "md:grid-cols-3",
+  "4": "md:grid-cols-4",
+};
+
+export const GRID_COL_SPAN_DESKTOP = {
+  "1": "md:col-span-1",
+  "2": "md:col-span-2",
+  "3": "md:col-span-3",
+  "4": "md:col-span-4",
+};

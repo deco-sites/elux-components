@@ -36,3 +36,19 @@ export type FontSize =
   | "text-3xl";
 
 export type GapSizes = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "8";
+
+export interface TextProps {
+  /**
+   * @title Text
+   */
+  text: string;
+  /**
+   * @title Font color
+   */
+  fontColor: Colors;
+  /**
+   * @title Font size
+   * @description text-xs: 12px, text-sm: 14px, text-base: 16px, text-lg: 18px, text-xl: 20px, text-2xl: 24px, text-3xl: 30px
+   */
+  fontSize: FontSize;
+}
