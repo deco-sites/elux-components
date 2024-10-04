@@ -206,9 +206,9 @@ function Menu({ links, menuText }: MenuProps) {
       <div
         class={clx(
           "h-screen absolute",
-          "group-has-[#open-menu:checked]/header:pointer-events-auto pointer-events-none -left-full",
+          "group-has-[#open-menu:checked]/header:pointer-events-auto pointer-events-none -left-[100vw]",
         )}
-        style={{ top: NAVBAR_HEIGHT_DESKTOP, width: "calc(100vw + 100%)" }}
+        style={{ top: NAVBAR_HEIGHT_DESKTOP, width: "200vw" }}
       >
         <div
           class={clx(

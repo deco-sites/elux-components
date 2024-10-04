@@ -3582,8 +3582,8 @@ details.collapse summary::-webkit-details-marker {
 .relative {
   position: relative;
 }
-.-left-full {
-  left: -100%;
+.-left-\[100vw\] {
+  left: -100vw;
 }
 .bottom-0 {
   bottom: 0px;
