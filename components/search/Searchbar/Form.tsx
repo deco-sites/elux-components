@@ -9,7 +9,6 @@
  * no JavaScript is shipped to the browser!
  */
 import { Suggestion } from "apps/commerce/types.ts";
-import { Resolved } from "deco/mod.ts";
 import {
   SEARCHBAR_INPUT_FORM_ID,
   SEARCHBAR_POPUP_ID,
@@ -20,6 +19,7 @@ import Icon from "../../ui/Icon.tsx";
 import { Props as SuggestionProps } from "./Suggestions.tsx";
 import { useScript } from "@deco/deco/hooks";
 import { asResolved } from "@deco/deco";
+import { type Resolved } from "@deco/deco";
 // When user clicks on the search button, navigate it to
 export const ACTION = "/s";
 // Querystring param used when navigating the user

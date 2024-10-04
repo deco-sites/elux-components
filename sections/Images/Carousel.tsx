@@ -83,7 +83,7 @@ function BannerItem(
             "sm:left-40 sm:items-start sm:max-w-96",
           )}
         >
-          <span class="text-7xl font-bold text-base-100">
+          <span class="text-7xl font-bold font-noto-sans text-primary">
             {action.title}
           </span>
           <span class="font-normal text-base text-base-100 pt-4 pb-12">
