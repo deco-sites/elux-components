@@ -13,7 +13,7 @@ import { Resolved } from "deco/mod.ts";
 import {
   SEARCHBAR_INPUT_FORM_ID,
   SEARCHBAR_POPUP_ID,
-} from "../../../constants.ts";
+} from "../../../constants.tsx";
 import { useId } from "../../../sdk/useId.ts";
 import { useComponent } from "../../../sections/Component.tsx";
 import Icon from "../../ui/Icon.tsx";

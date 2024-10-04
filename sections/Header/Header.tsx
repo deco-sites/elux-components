@@ -4,7 +4,7 @@ import Icon from "../../components/ui/Icon.tsx";
 import {
   HEADER_HEIGHT_DESKTOP,
   HEADER_HEIGHT_MOBILE,
-} from "../../constants.ts";
+} from "../../constants.tsx";
 import { useDevice } from "@deco/deco/hooks";
 import { Menu as MenuProps } from "../../loaders/menu.ts";
 import Dropdown from "../../components/header/Dropdown.tsx";

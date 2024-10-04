@@ -1,5 +1,5 @@
 import { AppContext } from "../../apps/site.ts";
-import { WISHLIST_FORM_ID } from "../../constants.ts";
+import { WISHLIST_FORM_ID } from "../../constants.tsx";
 import { useComponent } from "../../sections/Component.tsx";
 import { useScript } from "@deco/deco/hooks";
 export interface Wishlist {

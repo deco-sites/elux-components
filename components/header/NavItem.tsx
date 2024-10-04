@@ -1,4 +1,4 @@
-import { NAVBAR_HEIGHT_DESKTOP } from "../../constants.ts";
+import { NAVBAR_HEIGHT_DESKTOP } from "../../constants.tsx";
 import type { Department } from "../../loaders/menu.ts";
 import { clx } from "../../sdk/clx.ts";
 import Column from "./Collum.tsx";

@@ -1,6 +1,6 @@
 import { useScript } from "deco/hooks/useScript.ts";
 import Icon from "../../components/ui/Icon.tsx";
-import { NAVBAR_HEIGHT_DESKTOP } from "../../constants.ts";
+import { NAVBAR_HEIGHT_DESKTOP } from "../../constants.tsx";
 import type { ExtraMenu, Menu as MenuProps } from "../../loaders/menu.ts";
 import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
