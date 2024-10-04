@@ -60,12 +60,12 @@
           "items": [
             {
               "title": "Privacy Policy",
-              "link": "/",
+              "link": "/politica-de-privacidad",
               "icon": "search"
             },
             {
               "title": "Warranty Policy",
-              "link": "/",
+              "link": "/politica-de-privacidad",
               "icon": "search"
             }
           ],
