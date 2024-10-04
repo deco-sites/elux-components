@@ -82,6 +82,11 @@ export interface ExtraLink {
 
 /** @titleBy title */
 export interface ExtraMenu {
+  /**
+   * @title Ícone
+   * @format icon-select
+   * @options site/loaders/availableIcons.ts
+   */
   icon?: AvailableIcons;
   /** @title Título */
   title: string;

@@ -210,10 +210,17 @@ function Menu({ links, menuText }: MenuProps) {
         </div>
       </div>
       <div
-        class="h-screen w-screen absolute"
+        class={clx(
+          "h-screen w-screen absolute",
+          "group-has-[#open-menu:checked]/header:pointer-events-auto pointer-events-none",
+        )}
         style={{ top: NAVBAR_HEIGHT_DESKTOP }}
       >
-        <div class="z-40 group-has-[#open-menu:checked]/header:opacity-50 opacity-0 transition-opacity bg-black h-full w-full relative" />
+        <div
+          class={clx(
+            "z-40 group-has-[#open-menu:checked]/header:opacity-50 opacity-0 transition-opacity bg-black h-full w-full relative",
+          )}
+        />
       </div>
     </>
   );

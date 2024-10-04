@@ -24,7 +24,6 @@ function Column({ categories }: Column) {
   return (
     <li>
       <ul class="flex flex-col w-52 px-2">
-        {/** this may have less gap */}
         {categories.map((category) => (
           <li class="flex flex-col w-full">
             <a
