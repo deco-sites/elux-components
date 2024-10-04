@@ -3,19 +3,14 @@
   "path": "/politica-de-privacidad",
   "sections": [
     {
+      "__resolveType": "website/sections/Seo/SeoV2.tsx",
+      "titleTemplate": "Politica de Privacidad Frigidaire"
+    },
+    {
       "__resolveType": "Header"
     },
     {
       "__resolveType": "site/sections/Content/Breadcrumb.tsx",
-      "icon": "home-frigidaire",
-      "iconSize": 16,
-      "fontColor": "primary",
-      "fontSize": "text-xs",
-      "items": [
-        {
-          "label": "Politica de privacidad"
-        }
-      ],
       "spacing": {
         "desktop": {
           "top": {
@@ -33,7 +28,16 @@
             "size": "extra-small"
           }
         }
-      }
+      },
+      "icon": "home-frigidaire",
+      "iconSize": 16,
+      "fontColor": "primary",
+      "fontSize": "text-xs",
+      "items": [
+        {
+          "label": "Politica de privacidad"
+        }
+      ]
     },
     {
       "__resolveType": "site/sections/Institutional/Policy.tsx",

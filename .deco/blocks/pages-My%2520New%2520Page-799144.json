@@ -2,6 +2,13 @@
   "path": "/centros-de-servicio",
   "sections": [
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "website/sections/Seo/SeoV2.tsx",
+        "titleTemplate": "Soporte y Servicio Técnico"
+      }
+    },
+    {
       "__resolveType": "Header"
     },
     {
