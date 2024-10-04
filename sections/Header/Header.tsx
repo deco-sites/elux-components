@@ -27,7 +27,7 @@ const Desktop = ({ logo, menu }: Props) => {
   return (
     <>
       <div class="flex flex-col gap-4  max-w-[1280px] mx-auto h-[70px]">
-        <div class="flex justify-between items-center h-full px-13.5">
+        <div class="flex justify-between items-center h-full px-13.5 text-secondary">
           <a href="/" aria-label="Store logo">
             <Image
               src={logo.src}
@@ -43,11 +43,11 @@ const Desktop = ({ logo, menu }: Props) => {
         </div>
       </div>
       <div class="bg-base-200 h-[72px]">
-        <ul class="flex justify-start h-full max-w-[1280px] mx-auto">
+        <ul class="flex justify-start h-full max-w-[1280px] mx-auto text-sm text-secondary font-semibold">
           <li class="relative w-[182px]">
             <label
               htmlFor="open-menu"
-              class="flex items-center justify-center h-full w-[182px] gap-2  cursor-pointer"
+              class="flex items-center justify-center h-full w-[182px] gap-2 cursor-pointer"
             >
               <Icon class="text-primary" id="menu" />
               <p>{menu.allCategoriesText}</p>

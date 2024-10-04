@@ -11,23 +11,26 @@ function Dropdown({ icon, title, links }: ExtraMenu) {
     dropdown.style.left = `calc(100% - ${elementWidth}px)`;
   };
   return (
-    <div class="dropdown dropdown-hover">
+    <div class="dropdown dropdown-hover group">
       <div
         tabIndex={0}
         role="button"
-        class="flex justify-between items-center gap- h-[38px]"
+        class="flex justify-between items-center h-[38px]"
       >
         <div class="flex items-center gap-2">
           {icon && <Icon id={icon} />}
           <p class="text-sm font-semibold">{title}</p>
         </div>
-        <Icon class="text-primary rotate-90" id="chevron-right" />
+        <Icon
+          class="text-primary rotate-90 group-hover:-rotate-90 duration-150 ease-in-out"
+          id="chevron-right"
+        />
       </div>
       <ul
         tabIndex={0}
         class={clx(
-          "dropdown-content w-min  !py-2 !px-4 bg-white z-[9999]",
-          "rounded-[1px] border border-base-200",
+          "dropdown-content w-min !py-2 bg-white z-[9999]",
+          "rounded-[1px] border border-base-200 group",
         )}
         id={id}
         style={{
@@ -35,9 +38,9 @@ function Dropdown({ icon, title, links }: ExtraMenu) {
         }}
       >
         {links.map(({ link, title, icon, isBlank }) => (
-          <li class="w-full hover:bg-base-200">
+          <li class="w-full hover:bg-base-200 !px-4">
             <a
-              class="min-w-max flex items-center w-max h-[38px] hover:!bg-transparent font-semibold text-sm"
+              class="min-w-max flex items-center w-max h-[38px] hover:!bg-transparent font-semibold text-sm gap-2.5"
               href={link}
               target={isBlank ? "_blank" : "_self"}
               rel={isBlank ? "noopener noreferrer" : ""}

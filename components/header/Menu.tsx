@@ -20,7 +20,7 @@ const ExtraLink = ({ title, links, isLast }: ExtraMenu & {
           <li>
             <a
               class={clx(
-                "text-base font-normal leading-none h-[54px] flex justify-between items-center",
+                "text-base font-normal leading-none h-[54px] flex justify-between items-center text-secondary",
               )}
               href={link}
               target={isBlank ? "_blank" : "_self"}
@@ -87,7 +87,7 @@ const MenuMobile = ({ links, extraLinks, mobile, menuText }: MenuProps) => {
                           href={link}
                           target={isBlank ? "_blank" : "_self"}
                           rel={isBlank ? "noopener noreferrer" : ""}
-                          class="h-full font-bold items-center flex"
+                          class="h-full font-bold items-center flex text-secondary"
                         >
                           {title}
                         </a>
@@ -100,7 +100,7 @@ const MenuMobile = ({ links, extraLinks, mobile, menuText }: MenuProps) => {
                       <aside
                         class={clx(
                           "-translate-x-full peer-checked:translate-x-0 transition-all",
-                          "z-50 w-screen h-screen absolute top-0 left-0 bg-white",
+                          "z-50 w-screen h-screen absolute top-0 left-0 bg-white text-secondary",
                         )}
                       >
                         <div class="h-[52px] bg-primary w-full p-2 flex items-center justify-between pl-4">
@@ -205,10 +205,10 @@ function Menu({ links, menuText }: MenuProps) {
       </div>
       <div
         class={clx(
-          "h-screen absolute",
-          "group-has-[#open-menu:checked]/header:pointer-events-auto pointer-events-none -left-[100vw]",
+          "h-screen w-screen fixed",
+          "group-has-[#open-menu:checked]/header:pointer-events-auto pointer-events-none ",
         )}
-        style={{ top: NAVBAR_HEIGHT_DESKTOP, width: "200vw" }}
+        style={{ left: 0 }}
       >
         <div
           class={clx(

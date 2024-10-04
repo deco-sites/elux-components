@@ -3582,9 +3582,6 @@ details.collapse summary::-webkit-details-marker {
 .relative {
   position: relative;
 }
-.-left-\[100vw\] {
-  left: -100vw;
-}
 .bottom-0 {
   bottom: 0px;
 }
@@ -4066,9 +4063,6 @@ details.collapse summary::-webkit-details-marker {
 .w-screen {
   width: 100vw;
 }
-.min-w-56 {
-  min-width: 14rem;
-}
 .min-w-\[100px\] {
   min-width: 100px;
 }
@@ -4316,11 +4310,11 @@ details.collapse summary::-webkit-details-marker {
 .gap-12 {
   gap: 3rem;
 }
-.gap-16 {
-  gap: 4rem;
-}
 .gap-2 {
   gap: 0.5rem;
+}
+.gap-2\.5 {
+  gap: 0.625rem;
 }
 .gap-3 {
   gap: 0.75rem;
@@ -4704,10 +4698,6 @@ details.collapse summary::-webkit-details-marker {
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-}
-.px-30 {
-  padding-left: 7.5rem;
-  padding-right: 7.5rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -5255,8 +5245,14 @@ details.collapse summary::-webkit-details-marker {
 .duration-1000 {
   transition-duration: 1000ms;
 }
+.duration-150 {
+  transition-duration: 150ms;
+}
 .duration-300 {
   transition-duration: 300ms;
+}
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .ease-out {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
@@ -5669,6 +5665,11 @@ h6 {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.group:hover .group-hover\:-rotate-90 {
+  --tw-rotate: -90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .group:hover .group-hover\:border-primary {
   --tw-border-opacity: 1;
   border-color: var(--fallback-p,oklch(var(--p)/var(--tw-border-opacity)));
@@ -5703,6 +5704,10 @@ h6 {
 
 .peer:checked ~ .peer-checked\:pb-0 {
   padding-bottom: 0px;
+}
+
+.group\/header:has(#open-menu:checked) .group-has-\[\#open-menu\:checked\]\/header\:pointer-events-none {
+  pointer-events: none;
 }
 
 .group\/header:has(#open-menu:checked) .group-has-\[\#open-menu\:checked\]\/header\:pointer-events-auto {
@@ -6199,6 +6204,10 @@ h6 {
   .md\:mx-10 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+  }
+
+  .md\:mt-16 {
+    margin-top: 4rem;
   }
 
   .md\:block {

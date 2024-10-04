@@ -28,10 +28,10 @@ function Footer({
   collumns,
 }: Props) {
   return (
-    <footer class="px-30 py-14 mt-14 max-md:px-4 max-md:py-10 max-lg:flex-wrap">
+    <footer class="py-14 mt-14 max-md:px-4 max-md:py-10 max-lg:flex-wrap container text-sm">
       <div class="flex flex-col gap-8">
         <Image src={logo} width={150} height={18} />
-        <div class="flex justify-between gap-5 md:gap-10 max-md:flex-col">
+        <div class="flex justify-between gap-5 md:gap-10 max-md:flex-col text-secondary">
           {collumns.map((props) => <Collumn {...props} />)}
         </div>
         <div class="flex justify-between gap-10 lg:h-12 items-center max-lg:flex-wrap max-lg:justify-center">

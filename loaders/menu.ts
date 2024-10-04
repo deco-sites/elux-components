@@ -6,8 +6,6 @@ import { AvailableIcons } from "../components/ui/Icon.tsx";
 export interface NavItem {
   /**
    * @title Ícone
-   * @format icon-select
-   * @options site/loaders/availableIcons.ts
    */
   icon?: AvailableIcons;
   /** @title Título */
@@ -21,8 +19,6 @@ export interface NavItem {
 export interface Category {
   /**
    * @title Ícone
-   * @format icon-select
-   * @options site/loaders/availableIcons.ts
    */
   icon?: AvailableIcons;
   /** @title Título */
@@ -47,8 +43,6 @@ export interface Column {
 export interface Department {
   /**
    * @title Ícone
-   * @format icon-select
-   * @options site/loaders/availableIcons.ts
    */
   icon?: AvailableIcons;
   /** @title Título */
@@ -69,10 +63,8 @@ export interface Department {
 export interface ExtraLink {
   /**
    * @title Ícone
-   * @format icon-select
-   * @options site/loaders/availableIcons.ts
    */
-  icon: AvailableIcons;
+  icon?: AvailableIcons;
   /** @title Título */
   title: string;
   link: string;
@@ -84,8 +76,6 @@ export interface ExtraLink {
 export interface ExtraMenu {
   /**
    * @title Ícone
-   * @format icon-select
-   * @options site/loaders/availableIcons.ts
    */
   icon?: AvailableIcons;
   /** @title Título */

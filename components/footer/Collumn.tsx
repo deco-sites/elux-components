@@ -13,8 +13,6 @@ export interface ItemText {
 export interface ItemSocial {
   /**
    * @title Ícone
-   * @format icon-select
-   * @options site/loaders/availableIcons.ts
    */
   icon: AvailableIcons;
   link: string;
@@ -40,7 +38,7 @@ export interface Props {
 
 const SocialItems = ({ title, link, isBlank, items }: Category) => {
   return (
-    <div class="flex flex-col gap-3 max-md:border-b border-base-200 max-md:pb-8">
+    <div class="flex flex-col gap-3 max-md:border-b border-base-200 max-md:pb-8 md:mt-16">
       <a
         class="text-sm font-semibold"
         href={link}
@@ -98,7 +96,7 @@ function Collumn({ categories }: Props) {
   const device = useDevice();
   return (
     <div>
-      <ul class="flex flex-col min-w-56 gap-16 max-md:gap-6">
+      <ul class="flex flex-col max-md:gap-6">
         {categories.map((props) => {
           switch (props.type) {
             case "social":
