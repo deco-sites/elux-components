@@ -5,8 +5,14 @@ import Column from "./Collum.tsx";
 function NavItem(
   { title, collums, link, isBlank, color }: Department,
 ) {
+  const hasContentDiv = collums && collums.length > 0;
   return (
-    <li class="group flex items-center justify-center h-full relative w-[182px]">
+    <li
+      class={clx(
+        "group flex items-center justify-center h-full relative w-[182px]",
+        hasContentDiv ? "hover-nav-item" : "",
+      )}
+    >
       <a
         href={link}
         class={clx(
@@ -19,7 +25,7 @@ function NavItem(
         <p class="leading-none text-secondary font-semibold text-sm">{title}</p>
       </a>
 
-      {collums && collums.length > 0 && (
+      {hasContentDiv && (
         <div
           class="absolute hidden hover:flex group-hover:flex bg-white z-40 items-start justify-start gap-6 top-0 left-0"
           style={{ marginTop: NAVBAR_HEIGHT_DESKTOP }}
