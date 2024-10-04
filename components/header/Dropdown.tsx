@@ -24,13 +24,13 @@ function Dropdown({ icon, title, links }: ExtraMenu) {
           {icon && <Icon id={icon} />}
           <p class="text-sm font-semibold">{title}</p>
         </div>
-        <Icon class="text-[#EE405A] rotate-90" id="chevron-right" />
+        <Icon class="text-primary rotate-90" id="chevron-right" />
       </div>
       <ul
         tabIndex={0}
         class={clx(
           "dropdown-content w-min  !py-2 !px-4 bg-white z-[9999]",
-          "rounded-[1px] border border-[#EBEBEB]",
+          "rounded-[1px] border border-base-200",
         )}
         id={id}
         style={{
@@ -38,7 +38,7 @@ function Dropdown({ icon, title, links }: ExtraMenu) {
         }}
       >
         {links.map(({ link, title, icon, isBlank }) => (
-          <li class="w-full hover:bg-[#EBEBEB]">
+          <li class="w-full hover:bg-base-200">
             <a
               class="min-w-max flex items-center w-max h-[38px] hover:!bg-transparent font-semibold text-sm"
               href={link}

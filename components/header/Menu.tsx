@@ -14,10 +14,10 @@ const ExtraLink = (
   return (
     <div
       class={clx(
-        !isLast && "border-b border-[#EBEBEB]",
+        !isLast && "border-b border-base-200",
       )}
     >
-      <p class="flex items-center h-9 text-base font-bold text-[#EE405A]">
+      <p class="flex items-center h-9 text-base font-bold text-primary">
         {title}
       </p>
       <ul>
@@ -32,7 +32,7 @@ const ExtraLink = (
               rel={isBlank ? "noopener noreferrer" : ""}
             >
               <span class="flex items-center gap-2">
-                {icon && <Icon class="text-[#EE405A]" id={icon} />}
+                {icon && <Icon class="text-primary" id={icon} />}
                 <p class="h-full font-bold">{title}</p>
               </span>
             </a>
@@ -52,7 +52,7 @@ const MenuMobile = ({ links, extraLinks, mobile, menuText }: MenuProps) => {
           "z-50 w-screen h-screen absolute top-0",
         )}
       >
-        <div class="h-[52px] bg-[#EE405A] w-full p-2 flex items-center justify-between pl-4">
+        <div class="h-[52px] bg-primary w-full p-2 flex items-center justify-between pl-4">
           <Image src={mobile.logo} width={120} height={14} />
           <label
             class="h-9 w-9 flex items-center justify-center"
@@ -62,8 +62,8 @@ const MenuMobile = ({ links, extraLinks, mobile, menuText }: MenuProps) => {
           </label>
         </div>
         <div class="flex flex-col gap-3.5 h-full w-full bg-white pt-2 px-4">
-          <div class="border-b border-[#EBEBEB]">
-            <p class="flex items-center h-9 text-base font-bold text-[#EE405A]">
+          <div class="border-b border-base-200">
+            <p class="flex items-center h-9 text-base font-bold text-primary">
               {menuText}
             </p>
             <ul class="w-full h-full rounded-b-[4px]">
@@ -82,12 +82,12 @@ const MenuMobile = ({ links, extraLinks, mobile, menuText }: MenuProps) => {
                     <div
                       hx-on:click={useScript(onClick, id)}
                       class={clx(
-                        "text-base font-normal leading-none h-[54px] flex justify-between items-center peer-checked:bg-[#EBEBEB]",
+                        "text-base font-normal leading-none h-[54px] flex justify-between items-center peer-checked:bg-base-200",
                       )}
                       style={{ color: color }}
                     >
                       <span class="flex items-center gap-2 h-full">
-                        {icon && <Icon class="text-[#EE405A]" id={icon} />}
+                        {icon && <Icon class="text-primary" id={icon} />}
                         <a
                           href={link}
                           target={isBlank ? "_blank" : "_self"}
@@ -98,7 +98,7 @@ const MenuMobile = ({ links, extraLinks, mobile, menuText }: MenuProps) => {
                         </a>
                       </span>
                       <p>
-                        <Icon class="text-[#EE405A]" id="chevron-right" />
+                        <Icon class="text-primary" id="chevron-right" />
                       </p>
                     </div>
                     {collums && collums.length > 0 && (
@@ -108,7 +108,7 @@ const MenuMobile = ({ links, extraLinks, mobile, menuText }: MenuProps) => {
                           "z-50 w-screen h-screen absolute top-0 left-0 bg-white",
                         )}
                       >
-                        <div class="h-[52px] bg-[#EE405A] w-full p-2 flex items-center justify-between pl-4">
+                        <div class="h-[52px] bg-primary w-full p-2 flex items-center justify-between pl-4">
                           <Image src={mobile.logo} width={120} height={14} />
                           <label
                             htmlFor={id}
@@ -154,7 +154,7 @@ function Menu({ links, menuText }: MenuProps) {
         style={{ top: NAVBAR_HEIGHT_DESKTOP }}
       >
         <div class="flex flex-col gap-2 bg-white w-[296px] h-[568px] rounded-b-[4px] py-6 px-8 relative">
-          <p class="flex items-center h-9 text-base font-bold text-[#EE405A]">
+          <p class="flex items-center h-9 text-base font-bold text-primary">
             {menuText}
           </p>
           <ul>
@@ -173,7 +173,7 @@ function Menu({ links, menuText }: MenuProps) {
                   <Radio id={id} />
                   <a
                     class={clx(
-                      "text-base font-normal leading-none h-[54px] px-2 flex justify-between items-center peer-checked:bg-[#EBEBEB] border-b border-[#EBEBEB]",
+                      "text-base font-normal leading-none h-[54px] px-2 flex justify-between items-center peer-checked:bg-base-200 border-b border-base-200",
                     )}
                     style={{ color: color }}
                     href={link}
@@ -181,11 +181,11 @@ function Menu({ links, menuText }: MenuProps) {
                     rel={isBlank ? "noopener noreferrer" : ""}
                   >
                     <span class="flex items-center gap-2">
-                      {icon && <Icon class="text-[#EE405A]" id={icon} />}
+                      {icon && <Icon class="text-primary" id={icon} />}
                       <p>{title}</p>
                     </span>
                     <p>
-                      <Icon class="text-[#EE405A]" id="chevron-right" />
+                      <Icon class="text-primary" id="chevron-right" />
                     </p>
                   </a>
                   {collums && collums.length > 0 && (

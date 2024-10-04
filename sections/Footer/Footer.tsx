@@ -36,7 +36,7 @@ function Footer({
         </div>
         <div class="flex justify-between gap-10 lg:h-12 items-center max-lg:flex-wrap max-lg:justify-center">
           <div
-            class="text-[10px] text-[#848585] max-w-[684px] text-center"
+            class="text-[10px] text-info max-w-[684px] text-center"
             dangerouslySetInnerHTML={{ __html: richText }}
           />
           <div class="flex items-center flex-shrink">

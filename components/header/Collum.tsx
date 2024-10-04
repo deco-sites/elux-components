@@ -4,7 +4,7 @@ import Icon from "../ui/Icon.tsx";
 
 const Item = ({ title, link, isBlank }: NavItem) => {
   return (
-    <li class="w-full md:border-b border-[#EBEBEB]">
+    <li class="w-full md:border-b border-base-200">
       <a
         class={clx(
           "flex items-center justify-start w-full text-sm font-normal h-[42px]",
@@ -36,7 +36,7 @@ function Column({ categories }: Column) {
               )}
             >
               {category?.icon && (
-                <Icon class="text-[#EE405A]" id={category.icon} />
+                <Icon class="text-primary" id={category.icon} />
               )}
               <p>
                 {category.title}

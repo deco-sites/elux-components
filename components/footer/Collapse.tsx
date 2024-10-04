@@ -7,7 +7,7 @@ export function Collapse({ items, link, title, isBlank }: Category) {
   const id = useId();
 
   return (
-    <div class="collapse collapse-plus rounded-none border-b border-[#EBEBEB]">
+    <div class="collapse collapse-plus rounded-none border-b border-base-200">
       <input class="hidden peer" type="checkbox" id={id} />
 
       <label htmlFor={id} class="pb-6 peer-checked:pb-0">
@@ -37,7 +37,7 @@ export function Collapse({ items, link, title, isBlank }: Category) {
 
             <Icon
               id="chevron-right"
-              class="ml-auto text-[#EE405A] arrow pointer-events-none rotate-90"
+              class="ml-auto text-primary arrow pointer-events-none rotate-90"
               stroke="#19191a"
             />
           </div>

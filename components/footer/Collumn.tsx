@@ -40,7 +40,7 @@ export interface Props {
 
 const SocialItems = ({ title, link, isBlank, items }: Category) => {
   return (
-    <div class="flex flex-col gap-3 max-md:border-b border-[#EBEBEB] max-md:pb-8">
+    <div class="flex flex-col gap-3 max-md:border-b border-base-200 max-md:pb-8">
       <a
         class="text-sm font-semibold"
         href={link}
@@ -52,7 +52,7 @@ const SocialItems = ({ title, link, isBlank, items }: Category) => {
       <div class="flex justify-start gap-8">
         {(items as unknown as ItemSocial[]).map(({ link, icon, isBlank }) => (
           <a
-            class="text-[#EE405A]"
+            class="text-primary"
             href={link}
             target={isBlank ? "_blank" : "_self"}
             rel={isBlank ? "noopener noreferrer" : ""}

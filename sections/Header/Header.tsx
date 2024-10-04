@@ -42,14 +42,14 @@ const Desktop = ({ logo, menu }: Props) => {
           </div>
         </div>
       </div>
-      <div class="bg-[#EBEBEB] h-[72px]">
+      <div class="bg-base-200 h-[72px]">
         <ul class="flex justify-start h-full">
           <li class="relative w-[182px]">
             <label
               htmlFor="open-menu"
               class="flex items-center justify-center h-full w-[182px] gap-2  cursor-pointer"
             >
-              <Icon class="text-[#EE405A]" id="menu" />
+              <Icon class="text-primary" id="menu" />
               <p>{menu.allCategoriesText}</p>
             </label>
             <Menu {...menu} />
@@ -68,7 +68,7 @@ const Mobile = ({ logo, menu }: Props) => (
         <div class="flex items-center gap-2">
           <label
             for={"open-menu"}
-            class="flex items-center justify-center rounded-[4px] bg-[#EE405A] w-[48px] h-[48px]"
+            class="flex items-center justify-center rounded-[4px] bg-primary w-[48px] h-[48px]"
             aria-label="open menu"
           >
             <Icon class="text-white" id="menu" />
