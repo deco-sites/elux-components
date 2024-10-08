@@ -1,1 +1,9 @@
-{"__resolveType":"site/apps/deco/records.ts"}
+{
+  "__resolveType": "site/apps/deco/records.ts",
+  "url": "libsql://elux-nola-us-decocx.turso.io",
+  "authToken": {
+    "__resolveType": "website/loaders/secret.ts",
+    "name": "DATABASE_AUTH_TOKEN",
+    "encrypted": "6eeed6c8e4097efd96e004794385144e488ce6c4a19dcd7a1c03fbce08ea3aee726b30fc1e0f473491b2ea1c50a6f368485f0620988369510d06fe370a5067d7029204852a38da34af8b672886771048fd1ebc1c4f51d2a22090333827ed0cdcfba782fc20d2702fa7b564b2130aa89601256f95d77d0ff97d6474ac5f8c37f007e47cfd1a0dcffd3ae56e16fd96c6e6fe2adbc8abeac495d8948cb710b1c02d2b7e7357d1c40288d59f2627469935c0c7e385d46fe3781e1ded2778a2b20533be5eb5fc092061129d7d024a14956a90f69e60bdcbfce43631f2712f75fb05c8"
+  }
+}
