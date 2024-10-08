@@ -1,0 +1,11 @@
+{
+  "__resolveType": "site/actions/contact/submit.ts",
+  "country": "Brazil",
+  "serialNumber": "123",
+  "subject": "Subject Test",
+  "message": "Test 123",
+  "personName": "Lucas",
+  "personSurname": "Sacci",
+  "personEmail": "saccilucas@gmail.com",
+  "personPhone": "11997645981"
+}
