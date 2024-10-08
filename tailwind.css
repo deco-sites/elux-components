@@ -52,3 +52,10 @@ h6 {
   font-size: revert-layer; 
   font-weight: revert-layer;
 }
+
+
+select {
+/*   background-image: url('https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12041/b80e6907-c8f0-40db-a2c7-e2c3779b7d82') !important;
+  background-size: 24px !important;
+  background-position: calc(100% - 16px) calc(50%),calc(100%) calc(50%) !important; */
+}

@@ -20,7 +20,7 @@ import * as $$$$$$0 from "./sections/Animation/Animation.tsx";
 import * as $$$$$$1 from "./sections/Category/CategoryBanner.tsx";
 import * as $$$$$$2 from "./sections/Category/CategoryGrid.tsx";
 import * as $$$$$$3 from "./sections/Component.tsx";
-import * as $$$$$$31 from "./sections/container/Container.tsx";
+import * as $$$$$$32 from "./sections/container/Container.tsx";
 import * as $$$$$$4 from "./sections/Content/Breadcrumb.tsx";
 import * as $$$$$$5 from "./sections/Content/Faq.tsx";
 import * as $$$$$$6 from "./sections/Content/Hero.tsx";
@@ -45,9 +45,10 @@ import * as $$$$$$24 from "./sections/Product/SearchResult.tsx";
 import * as $$$$$$25 from "./sections/Product/ShelfWithImage.tsx";
 import * as $$$$$$26 from "./sections/Product/Wishlist.tsx";
 import * as $$$$$$27 from "./sections/Session.tsx";
-import * as $$$$$$28 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$29 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$30 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$28 from "./sections/Social/ContactForm.tsx";
+import * as $$$$$$29 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$30 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$31 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "loaders": {
@@ -63,7 +64,7 @@ const manifest = {
     "site/sections/Category/CategoryBanner.tsx": $$$$$$1,
     "site/sections/Category/CategoryGrid.tsx": $$$$$$2,
     "site/sections/Component.tsx": $$$$$$3,
-    "site/sections/container/Container.tsx": $$$$$$31,
+    "site/sections/container/Container.tsx": $$$$$$32,
     "site/sections/Content/Breadcrumb.tsx": $$$$$$4,
     "site/sections/Content/Faq.tsx": $$$$$$5,
     "site/sections/Content/Hero.tsx": $$$$$$6,
@@ -88,9 +89,10 @@ const manifest = {
     "site/sections/Product/ShelfWithImage.tsx": $$$$$$25,
     "site/sections/Product/Wishlist.tsx": $$$$$$26,
     "site/sections/Session.tsx": $$$$$$27,
-    "site/sections/Social/InstagramPosts.tsx": $$$$$$28,
-    "site/sections/Social/WhatsApp.tsx": $$$$$$29,
-    "site/sections/Theme/Theme.tsx": $$$$$$30,
+    "site/sections/Social/ContactForm.tsx": $$$$$$28,
+    "site/sections/Social/InstagramPosts.tsx": $$$$$$29,
+    "site/sections/Social/WhatsApp.tsx": $$$$$$30,
+    "site/sections/Theme/Theme.tsx": $$$$$$31,
   },
   "actions": {
     "site/actions/contact/submit.ts": $$$$$$$$$0,

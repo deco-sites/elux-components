@@ -28,6 +28,7 @@ export default {
       },
       fontSize: {
         "xxs": ["0.625rem", "1rem"], /* 10px */
+        "xs": ["0.75rem", "1.2rem"], /* 12px */
         "sm": ["0.875rem", "1.4rem"], /* 14px */
       },
       padding: {
@@ -61,6 +62,9 @@ export default {
         "71": "17rem", /* 272px */
         "85": "21.25rem", /* 272px */
         "1/10": "10%",
+      },
+      height: {
+        "11.5": "2.875rem", /* 46px */
       },
     },
   },
