@@ -29,6 +29,12 @@ function script(charLimit: number) {
     | null;
   const charCountLabel = document.getElementById("charCount");
   const submitButton = document.querySelector('button[type="submit"]');
+  const emailField = document.querySelector('[name="personEmail"]') as
+    | HTMLInputElement
+    | null;
+  const confirmEmailField = document.querySelector(
+    '[name="personConfirmEmail"]',
+  ) as HTMLInputElement | null;
 
   //Update char count label
   if (textarea && charCountLabel) {
@@ -47,10 +53,27 @@ function script(charLimit: number) {
     });
   }
 
+  // Add email matching validation
+  const validateEmails = () => {
+    const inputController = document.getElementById(
+      "confirmMailControlMessage",
+    ) as HTMLInputElement;
+    if (emailField!.value !== confirmEmailField!.value) {
+      inputController.checked = true;
+    } else {
+      inputController.checked = false;
+    }
+  };
+
+  if (emailField && confirmEmailField) {
+    emailField.addEventListener("input", validateEmails);
+    confirmEmailField.addEventListener("input", validateEmails);
+  }
+
   //Validate the form before send
   const validateForm = () => {
     const requiredFields = document.querySelectorAll("[data-required]");
-    return Array.from(requiredFields).reduce((isValid, field) => {
+    const allFields = Array.from(requiredFields).reduce((isValid, field) => {
       if (
         field instanceof HTMLInputElement ||
         field instanceof HTMLTextAreaElement
@@ -67,6 +90,20 @@ function script(charLimit: number) {
       }
       return isValid;
     }, true);
+
+    if (emailField && confirmEmailField) {
+      const inputController = document.getElementById(
+        "confirmMailControlMessage",
+      ) as HTMLInputElement;
+      if (emailField.value.trim() !== confirmEmailField.value.trim()) {
+        inputController.checked = true;
+        return false;
+      } else {
+        inputController.checked = false;
+      }
+    }
+
+    return allFields;
   };
 
   //Show form errors
@@ -95,7 +132,7 @@ function handleRequiredSelect(elementName: string) {
 function handleRequiredField(elementName: string) {
   const field = document.querySelector(
     `[name="${elementName}"]`,
-  ) as HTMLSelectElement;
+  ) as HTMLInputElement;
   const errorElement = field?.nextElementSibling as HTMLInputElement;
 
   if (!field && !errorElement) return;
@@ -274,6 +311,11 @@ export default function ContactForm({
                 )}
               />
               <ErrorComponent name={"confirmMailControl"} text={errorText} />
+              <ErrorComponent
+                id="confirmMailControlMessage"
+                name={"confirmMailControlMessage"}
+                text="Email must be equal"
+              />
             </div>
             {/* Confirm Phone number */}
             <div class="form-control">
@@ -323,13 +365,16 @@ export default function ContactForm({
   );
 }
 
-function ErrorComponent({ name, text }: { name: string; text: string }) {
+function ErrorComponent(
+  { name, text, id }: { name: string; text: string; id?: string },
+) {
   return (
     <>
       <input
         type="radio"
         class="hidden peer"
         name={name}
+        id={id}
       />
       <label
         for={name}
