@@ -12,4 +12,5 @@ export interface SubmitContactFormProps {
   personSurname?: string;
   personEmail?: string;
   personPhone?: string;
+  status?: string
 }

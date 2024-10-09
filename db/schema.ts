@@ -11,4 +11,5 @@ export const contact = sqliteTable("contact", {
   personEmail: text("personEmail"),
   personPhone: text("personPhone"),
   date: text("date"),
+  status: text("status"),
 });

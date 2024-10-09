@@ -8,6 +8,13 @@
       "when": 1728406715962,
       "tag": "0000_rainy_whirlwind",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1728510197880,
+      "tag": "0001_mixed_white_queen",
+      "breakpoints": true
     }
   ]
 }
