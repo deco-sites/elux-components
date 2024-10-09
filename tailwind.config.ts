@@ -65,6 +65,7 @@ export default {
       },
       height: {
         "10.5": "2.625rem", /* 42px */
+        "12.5": "3.125rem", /* 50px */
       },
       minHeight: {
         "10.5": "2.625rem", /* 42px */
@@ -74,6 +75,10 @@ export default {
       },
       borderWidth: {
         xs: "1.5px",
+      },
+      inset: {
+        "3/10": "30%",
+        "h-screen": "100vh",
       },
     },
   },

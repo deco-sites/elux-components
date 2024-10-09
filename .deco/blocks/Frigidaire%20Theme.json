@@ -50,7 +50,8 @@
     "neutral": "#D6D6D6",
     "info": "#848585",
     "secondary": "#323333",
-    "tertiary": "#ADADAD"
+    "tertiary": "#ADADAD",
+    "success": "#449d44"
   },
   "complementaryColors": {
     "base-200": "#EBEBEB",

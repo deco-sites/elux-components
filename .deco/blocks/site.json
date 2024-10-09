@@ -30,6 +30,9 @@
       "wishlist": null,
       "mode": "lazy",
       "user": null
+    },
+    {
+      "__resolveType": "site/sections/Content/Toast.tsx"
     }
   ],
   "routes": [

@@ -13,6 +13,7 @@ import {
 import { useComponent } from "../../sections/Component.tsx";
 import { SubmitContactFormProps } from "../../packs/types.ts";
 import { AppContext } from "../../apps/site.ts";
+import { useToast } from "../../sdk/useToast.ts";
 
 export interface Props {
   countries: string[];
@@ -20,6 +21,7 @@ export interface Props {
   textareaProps?: TextareaProps;
   errorText?: string;
   buttonProps?: ButtonProps;
+  displayToast?: "success" | "error";
 }
 
 function script(charLimit: number) {
@@ -65,6 +67,7 @@ function script(charLimit: number) {
     }
   };
 
+  //Add event listeners to email inputs
   if (emailField && confirmEmailField) {
     emailField.addEventListener("input", validateEmails);
     confirmEmailField.addEventListener("input", validateEmails);
@@ -151,15 +154,33 @@ export default function ContactForm({
   },
   buttonProps,
   errorText = "This field needs to be completed",
+  displayToast,
 }: Props) {
   const inputClass =
     "input w-full rounded border-xs border-neutral text-sm h-11.5";
   const selectClass = "select w-full rounded border-xs border-neutral text-sm";
   const labelClass = "text-xs font-semibold text-secondary";
   const { characterLimit, textareaRows } = textareaProps;
+  const toast = displayToast
+    ? displayToast === "success"
+      ? useToast({
+        text: "Formulario de contacto enviado!",
+        time: 5,
+        trigger: "load",
+        type: "success",
+      })
+      : useToast({
+        text: "No se pudo enviar el formulario",
+        time: 5,
+        trigger: "load",
+        type: "error",
+      })
+    : undefined;
 
   return (
-    <>
+    <div
+      {...toast}
+    >
       <form
         class="flex flex-col"
         hx-sync="this:replace"
@@ -361,7 +382,7 @@ export default function ContactForm({
       <script
         dangerouslySetInnerHTML={{ __html: useScript(script, characterLimit) }}
       />
-    </>
+    </div>
   );
 }
 
@@ -392,10 +413,15 @@ function ErrorComponent(
 export async function action(props: Props, req: Request, ctx: AppContext) {
   const form = await req.formData();
   const formDataObject = Object.fromEntries(form) as SubmitContactFormProps;
-  await ctx.invoke(
+  const formResult = await ctx.invoke(
     "site/actions/contact/submit.ts",
     formDataObject,
   );
 
-  return props;
+  return {
+    ...props,
+    ...formResult.success
+      ? { displayToast: "success" }
+      : { displayToast: "error" },
+  };
 }

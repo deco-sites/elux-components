@@ -282,3 +282,5 @@ export const GRID_COL_SPAN_DESKTOP = {
   "3": "md:col-span-3",
   "4": "md:col-span-4",
 };
+
+export const TOAST_ID = "toast-cart";

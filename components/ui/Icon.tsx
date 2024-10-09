@@ -24,7 +24,8 @@ export type AvailableIcons =
   | "headset-frigidaire"
   | "usa-frigidaire"
   | "spain-frigidaire"
-  | "error-frigidaire";
+  | "error-frigidaire"
+  | "close-frigidaire";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**

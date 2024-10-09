@@ -69,3 +69,17 @@ textarea {
 input {
   outline: none !important;
 }
+
+.toast-shadow {
+  box-shadow: 4px 4px 8px 0 rgba(0,0,0,.2)
+}
+
+.toast-show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.toast-hide {
+  transform: translateY(100%);
+  opacity: 0;
+}
