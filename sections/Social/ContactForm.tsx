@@ -15,7 +15,23 @@ export interface Props {
    * @description The list of subjects to be displayed in the dropdown
    */
   subjects?: string[];
+  /**
+   * @description Textarea props
+   */
+  textareaProps?: TextareaProps;
+  /**
+   * @description Error text in form
+   */
+  errorText?: string;
+  /**
+   * @description Spacing config
+   */
   spacing: SpacingConfig;
+}
+
+export interface TextareaProps {
+  textareaRows: number;
+  characterLimit: number;
 }
 
 export default function ContactForm({
@@ -24,6 +40,7 @@ export default function ContactForm({
   spacing,
   countries = [],
   subjects = [],
+  textareaProps,
 }: Props) {
   return (
     <Container
@@ -50,7 +67,11 @@ export default function ContactForm({
           <span>{description.text}</span>
         </div>
       )}
-      <ContactFormComponent countries={countries} subjects={subjects} />
+      <ContactFormComponent
+        countries={countries}
+        subjects={subjects}
+        textareaProps={textareaProps}
+      />
     </Container>
   );
 }
