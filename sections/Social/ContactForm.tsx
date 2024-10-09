@@ -19,10 +19,10 @@ export interface Props {
    * @description Textarea props
    */
   textareaProps?: TextareaProps;
-    /**
+  /**
    * @description Button Props
    */
-  buttonProps?: ButtonProps
+  buttonProps?: ButtonProps;
   /**
    * @description Error text in form
    */
@@ -45,7 +45,7 @@ export default function ContactForm({
   countries = [],
   subjects = [],
   textareaProps,
-  buttonProps
+  buttonProps,
 }: Props) {
   return (
     <Container

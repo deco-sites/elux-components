@@ -73,8 +73,8 @@ export default {
         "10.5": "2.625rem", /* 42px */
       },
       borderWidth: {
-        xs: "1.5px"
-      }
+        xs: "1.5px",
+      },
     },
   },
 };
