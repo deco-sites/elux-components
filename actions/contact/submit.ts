@@ -1,18 +1,9 @@
 import { logger } from "@deco/deco/o11y";
 import { type AppContext } from "../../apps/deco/records.ts";
 import { contact } from "../../db/schema.ts";
-import { Success } from "../../packs/types.ts";
+import { SubmitContactFormProps, Success } from "../../packs/types.ts";
 
-export interface Props {
-  country?: string;
-  serialNumber?: string;
-  subject?: string;
-  message?: string;
-  personName?: string;
-  personSurname?: string;
-  personEmail?: string;
-  personPhone?: string;
-}
+export type Props = SubmitContactFormProps;
 
 export default async function loader(
   props: Props,

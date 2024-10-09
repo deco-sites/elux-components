@@ -39,62 +39,59 @@
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Social/ContactForm.tsx",
-        "title": {
-          "text": "Contact form",
-          "fontColor": "primary",
-          "fontSize": "text-2xl"
-        },
-        "description": {
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel ultricies leo.",
-          "fontColor": "secondary",
-          "fontSize": "text-sm"
-        },
-        "countries": [
-          "Uruguay",
-          "Paraguay"
-        ],
-        "subjects": [
-          "Subject 1",
-          "Subject 2"
-        ],
-        "spacing": {
-          "desktop": {
-            "top": {
-              "behavior": "split",
-              "size": "small"
-            },
-            "bottom": {
-              "behavior": "split",
-              "size": "none"
-            }
+      "__resolveType": "site/sections/Social/ContactForm.tsx",
+      "title": {
+        "text": "Contact form",
+        "fontColor": "primary",
+        "fontSize": "text-2xl"
+      },
+      "description": {
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel ultricies leo.",
+        "fontColor": "secondary",
+        "fontSize": "text-sm"
+      },
+      "countries": [
+        "Uruguay",
+        "Paraguay"
+      ],
+      "subjects": [
+        "Subject 1",
+        "Subject 2"
+      ],
+      "spacing": {
+        "desktop": {
+          "top": {
+            "behavior": "split",
+            "size": "small"
           },
-          "mobile": {
-            "top": {
-              "behavior": "split",
-              "size": "extra-large"
-            },
-            "bottom": {
-              "behavior": "split",
-              "size": "none"
-            }
+          "bottom": {
+            "behavior": "split",
+            "size": "none"
           }
         },
-        "textareaProps": {
-          "characterLimit": 500,
-          "textareaRows": 7
-        },
-        "buttonProps": {
-          "text": "Send message",
-          "color": "primary",
-          "fontColor": "white",
-          "borderWidth": "0",
-          "hoverColor": "primary"
-        },
-        "errorText": "This field needs to be completed"
-      }
+        "mobile": {
+          "top": {
+            "behavior": "split",
+            "size": "extra-large"
+          },
+          "bottom": {
+            "behavior": "split",
+            "size": "none"
+          }
+        }
+      },
+      "textareaProps": {
+        "characterLimit": 500,
+        "textareaRows": 7
+      },
+      "buttonProps": {
+        "text": "Send message",
+        "color": "primary",
+        "fontColor": "white",
+        "borderWidth": "0",
+        "hoverColor": "primary"
+      },
+      "errorText": "This field needs to be completed"
     },
     {
       "__resolveType": "Footer"

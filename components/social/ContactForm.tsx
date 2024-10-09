@@ -10,6 +10,9 @@ import {
   HOVER_BG_COLORS,
   TEXT_COLORS,
 } from "../../constants.tsx";
+import { useComponent } from "../../sections/Component.tsx";
+import { SubmitContactFormProps } from "../../packs/types.ts";
+import { AppContext } from "../../apps/site.ts";
 
 export interface Props {
   countries: string[];
@@ -38,9 +41,8 @@ function script(charLimit: number) {
   //Add submit event prevent in form
   if (form && submitButton) {
     submitButton.addEventListener("click", function (event) {
-      event.preventDefault();
-      if (validateForm()) {
-        form.submit();
+      if (!validateForm()) {
+        event.preventDefault();
       }
     });
   }
@@ -121,8 +123,23 @@ export default function ContactForm({
 
   return (
     <>
-      <form class="flex flex-col">
-        <div class="flex flex-col gap-6 mt-12 max-w-[687px]">
+      <form
+        class="flex flex-col"
+        hx-sync="this:replace"
+        hx-trigger="submit"
+        hx-target="this"
+        hx-indicator="this"
+        hx-disabled-elt="this"
+        hx-swap="outerHTML"
+        hx-post={useComponent<Props>(import.meta.url, {
+          countries,
+          subjects,
+          textareaProps,
+          buttonProps,
+          errorText,
+        })}
+      >
+        <div class="flex flex-col gap-6 mt-12 max-w-[687px] outline-0">
           {/* Country Select field */}
           <div class="form-control md:max-w-[333px]">
             <label class={labelClass}>
@@ -274,10 +291,9 @@ export default function ContactForm({
         </div>
         <hr class="hidden md:block md:w-full border-base-200 mt-10" />
         <button
-          rel="next"
           type="submit"
           class={clx(
-            "btn btn-ghost px-6.5 py-2.5 min-h-10.5 max-h-10.5 mt-12 md:mt-6",
+            "btn btn-ghost px-6.5 min-h-10.5 max-h-10.5 mt-12 md:mt-6",
             "font-semibold text-sm w-full",
             "[&_section]:contents",
             "self-center md:self-end md:max-w-[242px]",
@@ -326,4 +342,15 @@ function ErrorComponent({ name, text }: { name: string; text: string }) {
       </label>
     </>
   );
+}
+
+export async function action(props: Props, req: Request, ctx: AppContext) {
+  const form = await req.formData();
+  const formDataObject = Object.fromEntries(form) as SubmitContactFormProps;
+  await ctx.invoke(
+    "site/actions/contact/submit.ts",
+    formDataObject,
+  );
+
+  return props;
 }
