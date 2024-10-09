@@ -274,6 +274,29 @@
 			</g>
 		</g>
 	</symbol>
-
+	<symbol id="error-frigidaire" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<g clip-path="url(#clip0_167_2603)">
+			<path
+				d="M8.5 14.6667C12.1819 14.6667 15.1667 11.6819 15.1667 8C15.1667 4.3181 12.1819 1.33333 8.5 1.33333C4.8181 1.33333 1.83333 4.3181 1.83333 8C1.83333 11.6819 4.8181 14.6667 8.5 14.6667Z"
+				fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+				stroke-linejoin="round" />
+			<path d="M10.5 6L6.5 10" stroke="white" stroke-width="1.5" stroke-linecap="round"
+				stroke-linejoin="round" />
+			<path d="M6.5 6L10.5 10" stroke="white" stroke-width="1.5" stroke-linecap="round"
+				stroke-linejoin="round" />
+		</g>
+		<defs>
+			<clipPath id="clip0_167_2603">
+				<rect width="16" height="16" fill="white" transform="translate(0.5)" />
+			</clipPath>
+		</defs>
+	</symbol>
+	<symbol id="close-frigidaire" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"
+		xmlns:xlink="http://www.w3.org/1999/xlink" fill="none">
+		<g fill="currentColor">
+			<path
+				d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+		</g>
+	</symbol>
 
 </svg>

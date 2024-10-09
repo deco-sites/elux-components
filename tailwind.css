@@ -52,3 +52,34 @@ h6 {
   font-size: revert-layer; 
   font-weight: revert-layer;
 }
+
+
+select {
+ background-image: url('https://deco-sites-assets.s3.sa-east-1.amazonaws.com/elux-nola-us/dfb613ec-7f3f-45d7-95b3-c70a4774fe0e/chevron.png') !important;
+  background-size: 24px !important;
+  background-position: calc(100% - 16px) calc(50%),calc(100%) calc(50%) !important; 
+  outline: none !important;
+}
+
+textarea {
+  resize: none;
+  outline: none !important;
+}
+
+input {
+  outline: none !important;
+}
+
+.toast-shadow {
+  box-shadow: 4px 4px 8px 0 rgba(0,0,0,.2)
+}
+
+.toast-show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.toast-hide {
+  transform: translateY(100%);
+  opacity: 0;
+}

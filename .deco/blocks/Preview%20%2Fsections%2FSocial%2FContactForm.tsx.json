@@ -1,0 +1,37 @@
+{
+  "__resolveType": "site/sections/Social/ContactForm.tsx",
+  "title": {
+    "fontColor": "primary",
+    "fontSize": "text-2xl",
+    "text": "Contact form"
+  },
+  "description": {
+    "fontColor": "secondary",
+    "fontSize": "text-xs",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel ultricies leo."
+  },
+  "spacing": {
+    "desktop": {
+      "top": {
+        "behavior": "split",
+        "size": "none"
+      },
+      "bottom": {
+        "behavior": "split",
+        "size": "none"
+      }
+    },
+    "mobile": {
+      "top": {
+        "behavior": "split",
+        "size": "none"
+      },
+      "bottom": {
+        "behavior": "split",
+        "size": "none"
+      }
+    }
+  },
+  "countries": [],
+  "subjects": []
+}
