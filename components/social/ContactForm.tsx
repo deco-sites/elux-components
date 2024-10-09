@@ -415,7 +415,7 @@ export async function action(props: Props, req: Request, ctx: AppContext) {
   const formDataObject = Object.fromEntries(form) as SubmitContactFormProps;
   const formResult = await ctx.invoke(
     "site/actions/contact/submit.ts",
-    {...formDataObject, status: "submitted"},
+    { ...formDataObject, status: "submitted" },
   );
 
   return {
