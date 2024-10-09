@@ -7,19 +7,16 @@
           "type": "text",
           "items": [
             {
-              "title": "Cocina",
               "link": "/",
-              "icon": "search"
+              "title": "Cocina"
             },
             {
-              "title": "Área de lavado",
               "link": "/",
-              "icon": "search"
+              "title": "Área de lavado"
             },
             {
-              "title": "Bienestar del hogar",
               "link": "/",
-              "icon": "search"
+              "title": "Bienestar del hogar"
             }
           ],
           "title": "Product Categories",
@@ -33,22 +30,19 @@
           "type": "text",
           "items": [
             {
-              "title": "Where to buy",
-              "link": "/",
-              "icon": "search"
+              "title": "Distribuidores de partes autorizados",
+              "link": "/"
             },
             {
-              "title": "List of Technical Support",
-              "link": "/",
-              "icon": "search"
+              "title": "Soporte y Servicio Técnico",
+              "link": "/"
             },
             {
-              "title": "Contact Form",
-              "link": "/",
-              "icon": "search"
+              "title": "Contáctanos",
+              "link": "/contactanos"
             }
           ],
-          "title": "Support",
+          "title": "Soporte y Servicio Técnico",
           "link": "/"
         }
       ]
@@ -59,17 +53,15 @@
           "type": "text",
           "items": [
             {
-              "title": "Privacy Policy",
-              "link": "/politica-de-privacidad",
-              "icon": "search"
+              "title": "Politica de Privacidad",
+              "link": "/politica-de-privacidad"
             },
             {
-              "title": "Warranty Policy",
-              "link": "/politica-de-privacidad",
-              "icon": "search"
+              "title": "Política de Garantía",
+              "link": "/politica-de-garantia"
             }
           ],
-          "title": "Policies and Guarantees",
+          "title": "Políticas",
           "link": "/"
         }
       ]
@@ -80,12 +72,12 @@
           "type": "text",
           "items": [
             {
-              "link": "/",
-              "title": "Blog Latin America"
+              "title": "Blog Latin America",
+              "link": "/"
             },
             {
               "link": "/",
-              "title": "About us"
+              "title": "Acerca de Frigidaire"
             }
           ],
           "title": "Frigidaire",
@@ -95,11 +87,23 @@
           "type": "social",
           "items": [
             {
-              "icon": "share",
+              "icon": "Facebook",
               "link": "/"
             },
             {
-              "icon": "share",
+              "icon": "Instagram",
+              "link": "/"
+            },
+            {
+              "icon": "YouTube",
+              "link": "/"
+            },
+            {
+              "icon": "Twitter",
+              "link": "/"
+            },
+            {
+              "icon": "Pinterest",
               "link": "/"
             }
           ],

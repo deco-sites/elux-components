@@ -4077,9 +4077,6 @@ details.collapse summary::-webkit-details-marker {
 .w-48 {
   width: 12rem;
 }
-.w-52 {
-  width: 13rem;
-}
 .w-6 {
   width: 1.5rem;
 }
@@ -6477,6 +6474,10 @@ input {
 
   .sm\:w-1\/2 {
     width: 50%;
+  }
+
+  .sm\:w-52 {
+    width: 13rem;
   }
 
   .sm\:w-72 {

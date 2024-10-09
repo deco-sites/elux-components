@@ -22,8 +22,8 @@ const Item = ({ title, link, isBlank }: NavItem) => {
 
 function Column({ categories }: Column) {
   return (
-    <li>
-      <ul class="flex flex-col w-52 px-2">
+    <li class="w-full">
+      <ul class="flex flex-col px-2 sm:w-52 gap-2 sm:gap-4">
         {categories.map((category) => (
           <li class="flex flex-col w-full">
             <a

@@ -3,6 +3,11 @@ import type { JSX } from "preact";
 
 export type AvailableIcons =
   | "search"
+  | "Pinterest"
+  | "Twitter"
+  | "YouTube"
+  | "Instagram"
+  | "Facebook"
   | "shopping_bag"
   | "menu"
   | "account_circle"
@@ -25,7 +30,16 @@ export type AvailableIcons =
   | "usa-frigidaire"
   | "spain-frigidaire"
   | "error-frigidaire"
-  | "close-frigidaire";
+  | "close-frigidaire"
+  | "freezer-frigidaire"
+  | "cocina-frigidaire"
+  | "washer-frigidaire"
+  | "iron-frigidaire"
+  | "dryer-frigidaire"
+  | "conditioning-frigidaire"
+  | "vacuum-frigidaire"
+  | "refrigerator-frigidaire"
+  | "wind-frigidaire";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**

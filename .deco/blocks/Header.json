@@ -68,21 +68,21 @@
     "__resolveType": "site/loaders/menu.ts",
     "menu": [
       {
-        "icon": "search",
+        "icon": "refrigerator-frigidaire",
         "collums": [
           {
             "categories": [
               {
-                "icon": "search",
+                "icon": "freezer-frigidaire",
                 "navItems": [
                   {
                     "icon": "search",
-                    "title": "One Door",
+                    "title": "Una Puerta",
                     "link": "/"
                   },
                   {
                     "icon": "search",
-                    "title": "Two Doors",
+                    "title": "Dos Puertas",
                     "link": "/"
                   },
                   {
@@ -97,12 +97,12 @@
                   },
                   {
                     "icon": "search",
-                    "title": "Freezers",
+                    "title": "Congeladores",
                     "link": "/"
                   },
                   {
                     "icon": "search",
-                    "title": "Wine Cellars",
+                    "title": "Cavas de Vino",
                     "link": "/"
                   }
                 ],
@@ -114,16 +114,16 @@
           {
             "categories": [
               {
-                "icon": "search",
+                "icon": "cocina-frigidaire",
                 "navItems": [
                   {
                     "icon": "search",
-                    "title": "Kitchens / Stoves",
+                    "title": "Cocinas / Estufas",
                     "link": "/"
                   },
                   {
                     "icon": "search",
-                    "title": "Grills / Table",
+                    "title": "Parrillas / Mesa",
                     "link": "/"
                   },
                   {
@@ -133,12 +133,12 @@
                   },
                   {
                     "icon": "search",
-                    "title": "Bells",
+                    "title": "Campanas",
                     "link": "/"
                   },
                   {
                     "icon": "search",
-                    "title": "Ovens",
+                    "title": "Hornos",
                     "link": "/"
                   }
                 ],
@@ -150,19 +150,19 @@
           {
             "categories": [
               {
-                "icon": "search",
+                "icon": "washer-frigidaire",
                 "navItems": [
                   {
                     "icon": "search",
-                    "title": "Recessed",
+                    "title": "Empotrables",
                     "link": "/"
                   }
                 ],
-                "title": "Dishwasher",
+                "title": "Lavavajillas",
                 "link": "/"
               },
               {
-                "icon": "search",
+                "icon": "iron-frigidaire",
                 "navItems": [
                   {
                     "icon": "search",
@@ -170,25 +170,116 @@
                     "link": "/"
                   }
                 ],
-                "title": "Small  Appliances",
+                "title": "Pequeños  Electrodomésticos",
                 "link": "/"
               }
             ]
           }
         ],
-        "title": "kitchen",
+        "title": "Cocina",
         "link": "/"
       },
       {
-        "icon": "search",
-        "collums": [],
-        "title": "Washing area",
+        "icon": "washer-frigidaire",
+        "collums": [
+          {
+            "categories": [
+              {
+                "icon": "washer-frigidaire",
+                "navItems": [
+                  {
+                    "icon": "search",
+                    "title": "Lavadora Carga Superior",
+                    "link": "/"
+                  },
+                  {
+                    "icon": "search",
+                    "title": "Lavadora Carga Frontal",
+                    "link": "/"
+                  },
+                  {
+                    "icon": "search",
+                    "title": "Lava Secadora",
+                    "link": "/"
+                  },
+                  {
+                    "icon": "search",
+                    "title": "Centro de lavado",
+                    "link": "/"
+                  }
+                ],
+                "title": "Lavado",
+                "link": "/"
+              }
+            ]
+          },
+          {
+            "categories": [
+              {
+                "icon": "dryer-frigidaire",
+                "navItems": [
+                  {
+                    "icon": "search",
+                    "title": "Secadora Carga Superior",
+                    "link": "/"
+                  },
+                  {
+                    "icon": "search",
+                    "title": "Secadora Carga Frontal",
+                    "link": "/"
+                  }
+                ],
+                "title": "Secadoras",
+                "link": "/"
+              }
+            ]
+          }
+        ],
+        "title": "Área de lavado",
         "link": "/"
       },
       {
-        "icon": "search",
-        "collums": [],
-        "title": "Home well-being",
+        "icon": "wind-frigidaire",
+        "collums": [
+          {
+            "categories": [
+              {
+                "icon": "conditioning-frigidaire",
+                "navItems": [
+                  {
+                    "icon": "search",
+                    "title": "Split",
+                    "link": "/"
+                  },
+                  {
+                    "icon": "search",
+                    "title": "Portátiles",
+                    "link": "/"
+                  }
+                ],
+                "title": "Aire Acondicionado",
+                "link": "/"
+              }
+            ]
+          },
+          {
+            "categories": [
+              {
+                "icon": "vacuum-frigidaire",
+                "navItems": [
+                  {
+                    "icon": "search",
+                    "title": "xxx",
+                    "link": "/"
+                  }
+                ],
+                "title": "Aspiradoras",
+                "link": "/"
+              }
+            ]
+          }
+        ],
+        "title": "Bienestar del hogar",
         "link": "/"
       }
     ],
@@ -196,19 +287,19 @@
       {
         "links": [
           {
-            "title": "Where to buy",
+            "title": "Distribuidores de partes autorizados",
             "link": "/"
           },
           {
-            "title": "List of Technical Support",
+            "title": "Asistencia Técnica",
             "link": "/centros-de-servicio"
           },
           {
-            "title": "Contact Form",
-            "link": "/"
+            "title": "Contáctanos",
+            "link": "/contactanos"
           }
         ],
-        "title": "Support"
+        "title": "Soporte y Servicio Técnico"
       },
       {
         "links": [
@@ -217,7 +308,7 @@
             "link": "/"
           },
           {
-            "title": "About us",
+            "title": "Acerca de Frigidaire",
             "link": "/"
           }
         ],
