@@ -2,12 +2,21 @@ import { useScript } from "@deco/deco/hooks";
 import { clx } from "../../sdk/clx.ts";
 import { TextareaProps } from "../../sections/Social/ContactForm.tsx";
 import Icon from "../ui/Icon.tsx";
+import { ButtonProps } from "../../sdk/types.ts";
+import {
+  BG_COLORS,
+  BORDER_CLASSES,
+  BORDER_COLORS,
+  HOVER_BG_COLORS,
+  TEXT_COLORS,
+} from "../../constants.tsx";
 
 export interface Props {
   countries: string[];
   subjects: string[];
   textareaProps?: TextareaProps;
   errorText?: string;
+  buttonProps?: ButtonProps;
 }
 
 function script(charLimit: number) {
@@ -101,20 +110,21 @@ export default function ContactForm({
     characterLimit: 500,
     textareaRows: 8,
   },
+  buttonProps,
   errorText = "This field needs to be completed",
 }: Props) {
   const inputClass =
-    "input w-full rounded border border-neutral text-sm h-11.5";
-  const selectClass = "select w-full rounded border border-neutral text-sm";
+    "input w-full rounded border-xs border-neutral text-sm h-11.5";
+  const selectClass = "select w-full rounded border-xs border-neutral text-sm";
   const labelClass = "text-xs font-semibold text-secondary";
   const { characterLimit, textareaRows } = textareaProps;
 
   return (
     <>
-      <form class="max-w-[687px]">
-        <div class="flex flex-col gap-6 mt-12">
+      <form class="flex flex-col">
+        <div class="flex flex-col gap-6 mt-12 max-w-[687px]">
           {/* Country Select field */}
-          <div class="form-control">
+          <div class="form-control md:max-w-[333px]">
             <label class={labelClass}>
               Country*
             </label>
@@ -133,35 +143,38 @@ export default function ContactForm({
             </select>
             <ErrorComponent name={"countryControl"} text={errorText} />
           </div>
-          {/* Product Code field */}
-          <div class="form-control">
-            <label class={labelClass}>
-              Product code / Model number
-            </label>
-            <input
-              type="text"
-              placeholder="Insert the product code/model number"
-              class={inputClass}
-              name="serialNumber"
-            />
-          </div>
-          {/* Subject Select field */}
-          <div class="form-control">
-            <label class={labelClass}>
-              Subject
-            </label>
-            <select class={selectClass} name="subject">
-              <option value="default" default>
-                Select the subject
-              </option>
-              {subjects.map((subject) => (
-                <option key={subject} value={subject}>
-                  {subject}
+
+          <div class="flex flex-col gap-6 md:flex-row md:gap-5">
+            {/* Product Code field */}
+            <div class="form-control w-full">
+              <label class={labelClass}>
+                Product code / Model number
+              </label>
+              <input
+                type="text"
+                placeholder="Insert the product code/model number"
+                class={inputClass}
+                name="serialNumber"
+              />
+            </div>
+            {/* Subject Select field */}
+            <div class="form-control w-full">
+              <label class={labelClass}>
+                Subject
+              </label>
+              <select class={selectClass} name="subject">
+                <option value="default" default>
+                  Select the subject
                 </option>
-              ))}
-            </select>
+                {subjects.map((subject) => (
+                  <option key={subject} value={subject}>
+                    {subject}
+                  </option>
+                ))}
+              </select>
+            </div>
           </div>
-          {/* Message Textare */}
+          {/* Message Textarea */}
           <div class="form-control">
             <label class={labelClass}>
               Message
@@ -179,94 +192,110 @@ export default function ContactForm({
               0/{characterLimit}
             </label>
           </div>
-          <span class="text-secondary font-bold">Personal data</span>
-          {/* Name field */}
-          <div class="form-control">
-            <label class={labelClass}>
-              Name*
-            </label>
-            <input
-              type="text"
-              placeholder="Insert your name"
-              class={inputClass}
-              name="personName"
-              data-required
-              hx-on:input={useScript(handleRequiredField, "personName")}
-            />
-            <ErrorComponent name={"nameControl"} text={errorText} />
-          </div>
-          {/* Surname field */}
-          <div class="form-control">
-            <label class={labelClass}>
-              Surnames*
-            </label>
-            <input
-              type="text"
-              placeholder="Insert your surnames"
-              class={inputClass}
-              name="personSurname"
-              data-required
-              hx-on:input={useScript(handleRequiredField, "personSurname")}
-            />
-            <ErrorComponent name={"surnameControl"} text={errorText} />
-          </div>
-          {/* Email field */}
-          <div class="form-control">
-            <label class={labelClass}>
-              Email*
-            </label>
-            <input
-              type="email"
-              placeholder="Insert your surnames"
-              class={inputClass}
-              name="personEmail"
-              data-required
-              hx-on:input={useScript(handleRequiredField, "personEmail")}
-            />
-            <ErrorComponent name={"mailControl"} text={errorText} />
-          </div>
-          {/* Confirm Email field */}
-          <div class="form-control">
-            <label class={labelClass}>
-              Confirm email*
-            </label>
-            <input
-              type="text"
-              placeholder="Insert your surnames"
-              class={inputClass}
-              name="personConfirmEmail"
-              data-required
-              hx-on:input={useScript(handleRequiredField, "personConfirmEmail")}
-            />
-            <ErrorComponent name={"confirmMailControl"} text={errorText} />
-          </div>
-          {/* Confirm Phone number */}
-          <div class="form-control">
-            <label class={labelClass}>
-              Contact phone number
-            </label>
-            <input
-              type="text"
-              placeholder="Insert your surnames"
-              class={inputClass}
-              name="personPhone"
-            />
+          <span class="text-secondary font-bold md:mt-6">Personal data</span>
+          {/* Personal data section */}
+          <div class="flex flex-col max-md:gap-6 md:grid md:grid-cols-2 md:gap-y-5 md:gap-x-6">
+            {/* Name field */}
+            <div class="form-control">
+              <label class={labelClass}>
+                Name*
+              </label>
+              <input
+                type="text"
+                placeholder="Insert your name"
+                class={inputClass}
+                name="personName"
+                data-required
+                hx-on:input={useScript(handleRequiredField, "personName")}
+              />
+              <ErrorComponent name={"nameControl"} text={errorText} />
+            </div>
+            {/* Surname field */}
+            <div class="form-control">
+              <label class={labelClass}>
+                Surnames*
+              </label>
+              <input
+                type="text"
+                placeholder="Insert your surnames"
+                class={inputClass}
+                name="personSurname"
+                data-required
+                hx-on:input={useScript(handleRequiredField, "personSurname")}
+              />
+              <ErrorComponent name={"surnameControl"} text={errorText} />
+            </div>
+            {/* Email field */}
+            <div class="form-control">
+              <label class={labelClass}>
+                Email*
+              </label>
+              <input
+                type="email"
+                placeholder="Insert your surnames"
+                class={inputClass}
+                name="personEmail"
+                data-required
+                hx-on:input={useScript(handleRequiredField, "personEmail")}
+              />
+              <ErrorComponent name={"mailControl"} text={errorText} />
+            </div>
+            {/* Confirm Email field */}
+            <div class="form-control">
+              <label class={labelClass}>
+                Confirm email*
+              </label>
+              <input
+                type="text"
+                placeholder="Insert your surnames"
+                class={inputClass}
+                name="personConfirmEmail"
+                data-required
+                hx-on:input={useScript(
+                  handleRequiredField,
+                  "personConfirmEmail",
+                )}
+              />
+              <ErrorComponent name={"confirmMailControl"} text={errorText} />
+            </div>
+            {/* Confirm Phone number */}
+            <div class="form-control">
+              <label class={labelClass}>
+                Contact phone number
+              </label>
+              <input
+                type="text"
+                placeholder="Insert your surnames"
+                class={inputClass}
+                name="personPhone"
+              />
+            </div>
           </div>
         </div>
+        <hr class="hidden md:block md:w-full border-base-200 mt-10" />
         <button
           rel="next"
           type="submit"
           class={clx(
-            "btn btn-ghost px-6.5 py-2.5 min-h-10.5 max-h-10.5 mt-12",
-            "text-sm text-white w-full",
-            "font-semibold bg-primary",
+            "btn btn-ghost px-6.5 py-2.5 min-h-10.5 max-h-10.5 mt-12 md:mt-6",
+            "font-semibold text-sm w-full",
             "[&_section]:contents",
-            "self-center",
-            "lg:self-start lg:ml-15 hover:bg-base-content",
+            "self-center md:self-end md:max-w-[242px]",
+            TEXT_COLORS[buttonProps?.fontColor ?? "white"],
+            BG_COLORS[buttonProps?.color ?? "primary"],
+            buttonProps?.borderColor
+              ? BORDER_COLORS[buttonProps.borderColor]
+              : "",
+            buttonProps?.borderWidth && buttonProps.borderWidth !== "0"
+              ? BORDER_CLASSES.full[buttonProps.borderWidth]
+              : "",
+            buttonProps?.hoverColor
+              ? HOVER_BG_COLORS[buttonProps.hoverColor]
+              : "",
           )}
         >
           <span class="inline [.htmx-request_&]:hidden">
-            Send message
+            {buttonProps?.text ?? "Send message"}
           </span>
           <span class="loading loading-spinner hidden [.htmx-request_&]:block" />
         </button>

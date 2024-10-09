@@ -1,6 +1,6 @@
 import { TEXT_COLORS } from "../../constants.tsx";
 import { clx } from "../../sdk/clx.ts";
-import { TextProps } from "../../sdk/types.ts";
+import { ButtonProps, TextProps } from "../../sdk/types.ts";
 import Container, { SpacingConfig } from "../container/Container.tsx";
 import ContactFormComponent from "../../components/social/ContactForm.tsx";
 
@@ -19,6 +19,10 @@ export interface Props {
    * @description Textarea props
    */
   textareaProps?: TextareaProps;
+    /**
+   * @description Button Props
+   */
+  buttonProps?: ButtonProps
   /**
    * @description Error text in form
    */
@@ -41,6 +45,7 @@ export default function ContactForm({
   countries = [],
   subjects = [],
   textareaProps,
+  buttonProps
 }: Props) {
   return (
     <Container
@@ -71,6 +76,7 @@ export default function ContactForm({
         countries={countries}
         subjects={subjects}
         textareaProps={textareaProps}
+        buttonProps={buttonProps}
       />
     </Container>
   );

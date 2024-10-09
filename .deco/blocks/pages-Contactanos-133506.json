@@ -81,7 +81,19 @@
               "size": "none"
             }
           }
-        }
+        },
+        "textareaProps": {
+          "characterLimit": 500,
+          "textareaRows": 7
+        },
+        "buttonProps": {
+          "text": "Send message",
+          "color": "primary",
+          "fontColor": "white",
+          "borderWidth": "0",
+          "hoverColor": "primary"
+        },
+        "errorText": "This field needs to be completed"
       }
     },
     {

@@ -52,3 +52,30 @@ export interface TextProps {
    */
   fontSize: FontSize;
 }
+
+export interface ButtonProps {
+  /**
+   * @title Text
+   */
+  text: string;
+  /**
+   * @title Background color
+   */
+  color: Colors;
+  /**
+   * @title Background color hover
+   */
+  hoverColor?: Colors;
+  /**
+   * @title Border color
+   */
+  borderColor?: Colors;
+  /**
+   * @title Border width
+   */
+  borderWidth?: "0" | "1" | "2";
+  /**
+   * @title Font color
+   */
+  fontColor: Colors;
+}

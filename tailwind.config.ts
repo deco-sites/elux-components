@@ -70,8 +70,11 @@ export default {
         "10.5": "2.625rem", /* 42px */
       },
       maxHeight: {
-        "98": "25rem", /* 400px */
+        "10.5": "2.625rem", /* 42px */
       },
+      borderWidth: {
+        xs: "1.5px"
+      }
     },
   },
 };
