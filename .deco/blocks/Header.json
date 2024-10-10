@@ -319,17 +319,17 @@
       "icon": "spain-frigidaire",
       "links": [
         {
-          "icon": "usa-frigidaire",
-          "title": "English",
-          "link": "/"
-        },
-        {
           "icon": "spain-frigidaire",
           "title": "Español",
           "link": "/"
+        },
+        {
+          "icon": "usa-frigidaire",
+          "title": "English",
+          "link": "/"
         }
       ],
-      "title": "EN"
+      "title": "ES"
     },
     "mobile": {
       "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/elux-nola-us/7b8ff11a-6d0d-4231-98a5-d27f235e06e5/Logo-Default.png",
