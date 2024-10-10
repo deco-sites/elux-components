@@ -26,7 +26,11 @@ export interface Props {
   /**
    * @description Error text in form
    */
-  errorText?: string;
+  errorMessages?: ErrorProps;
+  /**
+   * @description Language of the labels and placeholders
+   */
+  language: "ES" | "EN";
   /**
    * @description Spacing config
    */
@@ -38,6 +42,17 @@ export interface TextareaProps {
   characterLimit: number;
 }
 
+export interface ErrorProps {
+  /**
+   * @description Error when a required field isn`t filled
+   */
+  requiredFieldText?: string;
+  /**
+   * @description Error when the email fields have different values
+   */
+  mustBeEqualEmailField?: string;
+}
+
 export default function ContactForm({
   title,
   description,
@@ -46,6 +61,8 @@ export default function ContactForm({
   subjects = [],
   textareaProps,
   buttonProps,
+  errorMessages,
+  language,
 }: Props) {
   return (
     <Container
@@ -77,6 +94,8 @@ export default function ContactForm({
         subjects={subjects}
         textareaProps={textareaProps}
         buttonProps={buttonProps}
+        errorMessages={errorMessages}
+        language={language}
       />
     </Container>
   );

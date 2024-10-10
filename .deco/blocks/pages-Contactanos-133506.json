@@ -41,7 +41,7 @@
     {
       "__resolveType": "site/sections/Social/ContactForm.tsx",
       "title": {
-        "text": "Contact form",
+        "text": "Contáctanos",
         "fontColor": "primary",
         "fontSize": "text-2xl"
       },
@@ -51,12 +51,22 @@
         "fontSize": "text-sm"
       },
       "countries": [
-        "Uruguay",
-        "Paraguay"
+        "Costa Rica",
+        "El Salvador",
+        "Guatemala",
+        "Honduras",
+        "México",
+        "Nicarágua",
+        "Panamá",
+        "Puerto Rico",
+        "República Dominicana"
       ],
       "subjects": [
-        "Subject 1",
-        "Subject 2"
+        "Asunto",
+        "Soporte",
+        "Dudas",
+        "Productos",
+        "Tienda"
       ],
       "spacing": {
         "desktop": {
@@ -85,13 +95,17 @@
         "textareaRows": 7
       },
       "buttonProps": {
-        "text": "Send message",
+        "text": "Enviar Mensaje",
         "color": "primary",
         "fontColor": "white",
         "borderWidth": "0",
         "hoverColor": "primary"
       },
-      "errorText": "This field needs to be completed"
+      "language": "ES",
+      "errorMessages": {
+        "requiredFieldText": "Este campo debe ser completado",
+        "mustBeEqualEmailField": "El email debe ser igual"
+      }
     },
     {
       "__resolveType": "Footer"

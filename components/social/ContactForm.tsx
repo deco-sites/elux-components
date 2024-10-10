@@ -1,6 +1,9 @@
 import { useScript } from "@deco/deco/hooks";
 import { clx } from "../../sdk/clx.ts";
-import { TextareaProps } from "../../sections/Social/ContactForm.tsx";
+import {
+  ErrorProps,
+  TextareaProps,
+} from "../../sections/Social/ContactForm.tsx";
 import Icon from "../ui/Icon.tsx";
 import { ButtonProps } from "../../sdk/types.ts";
 import {
@@ -8,6 +11,7 @@ import {
   BORDER_CLASSES,
   BORDER_COLORS,
   HOVER_BG_COLORS,
+  LANGUAGE_DIFFS,
   TEXT_COLORS,
 } from "../../constants.tsx";
 import { useComponent } from "../../sections/Component.tsx";
@@ -19,9 +23,10 @@ export interface Props {
   countries: string[];
   subjects: string[];
   textareaProps?: TextareaProps;
-  errorText?: string;
+  errorMessages?: ErrorProps;
   buttonProps?: ButtonProps;
   displayToast?: "success" | "error";
+  language: "ES" | "EN";
 }
 
 function script(charLimit: number) {
@@ -153,14 +158,20 @@ export default function ContactForm({
     textareaRows: 8,
   },
   buttonProps,
-  errorText = "This field needs to be completed",
+  errorMessages = {
+    requiredFieldText: "This field needs to be completed",
+    mustBeEqualEmailField: "Email must be equal",
+  },
   displayToast,
+  language,
 }: Props) {
   const inputClass =
     "input w-full rounded border-xs border-neutral text-sm h-11.5";
   const selectClass = "select w-full rounded border-xs border-neutral text-sm";
   const labelClass = "text-xs font-semibold text-secondary";
   const { characterLimit, textareaRows } = textareaProps;
+  const { requiredFieldText, mustBeEqualEmailField } = errorMessages;
+  const { contactForm } = LANGUAGE_DIFFS[language];
   const toast = displayToast
     ? displayToast === "success"
       ? useToast({
@@ -194,14 +205,15 @@ export default function ContactForm({
           subjects,
           textareaProps,
           buttonProps,
-          errorText,
+          errorMessages,
+          language,
         })}
       >
         <div class="flex flex-col gap-6 mt-12 max-w-[687px] outline-0">
           {/* Country Select field */}
           <div class="form-control md:max-w-[333px]">
             <label class={labelClass}>
-              Country*
+              {contactForm.country.label}
             </label>
             <select
               class={selectClass}
@@ -209,25 +221,27 @@ export default function ContactForm({
               data-required
               hx-on:change={useScript(handleRequiredSelect, "country")}
             >
-              <option value="default" default>Select the country</option>
+              <option value="default" default>
+                {contactForm.country.placeholder}
+              </option>
               {countries.map((country) => (
                 <option key={country} value={country}>
                   {country}
                 </option>
               ))}
             </select>
-            <ErrorComponent name={"countryControl"} text={errorText} />
+            <ErrorComponent name={"countryControl"} text={requiredFieldText!} />
           </div>
 
           <div class="flex flex-col gap-6 md:flex-row md:gap-5">
             {/* Product Code field */}
             <div class="form-control w-full">
               <label class={labelClass}>
-                Product code / Model number
+                {contactForm.productCode.label}
               </label>
               <input
                 type="text"
-                placeholder="Insert the product code/model number"
+                placeholder={contactForm.productCode.placeholder}
                 class={inputClass}
                 name="serialNumber"
               />
@@ -235,11 +249,11 @@ export default function ContactForm({
             {/* Subject Select field */}
             <div class="form-control w-full">
               <label class={labelClass}>
-                Subject
+                {contactForm.subject.label}
               </label>
               <select class={selectClass} name="subject">
                 <option value="default" default>
-                  Select the subject
+                  {contactForm.subject.placeholder}
                 </option>
                 {subjects.map((subject) => (
                   <option key={subject} value={subject}>
@@ -252,11 +266,11 @@ export default function ContactForm({
           {/* Message Textarea */}
           <div class="form-control">
             <label class={labelClass}>
-              Message
+              {contactForm.message.label}
             </label>
             <textarea
               class="textarea w-full rounded-sm border border-neutral text-sm"
-              placeholder="Insert the message"
+              placeholder={contactForm.message.placeholder}
               maxLength={characterLimit}
               rows={textareaRows}
               name="message"
@@ -267,62 +281,67 @@ export default function ContactForm({
               0/{characterLimit}
             </label>
           </div>
-          <span class="text-secondary font-bold md:mt-6">Personal data</span>
+          <span class="text-secondary font-bold md:mt-6">
+            {contactForm.label}
+          </span>
           {/* Personal data section */}
           <div class="flex flex-col max-md:gap-6 md:grid md:grid-cols-2 md:gap-y-5 md:gap-x-6">
             {/* Name field */}
             <div class="form-control">
               <label class={labelClass}>
-                Name*
+                {contactForm.name.label}
               </label>
               <input
                 type="text"
-                placeholder="Insert your name"
+                placeholder={contactForm.name.placeholder}
                 class={inputClass}
                 name="personName"
                 data-required
                 hx-on:input={useScript(handleRequiredField, "personName")}
               />
-              <ErrorComponent name={"nameControl"} text={errorText} />
+              <ErrorComponent name={"nameControl"} text={requiredFieldText!} />
             </div>
             {/* Surname field */}
             <div class="form-control">
               <label class={labelClass}>
-                Surnames*
+                {contactForm.surnames.label}
               </label>
               <input
                 type="text"
-                placeholder="Insert your surnames"
+                placeholder={contactForm.surnames.placeholder}
                 class={inputClass}
                 name="personSurname"
                 data-required
                 hx-on:input={useScript(handleRequiredField, "personSurname")}
               />
-              <ErrorComponent name={"surnameControl"} text={errorText} />
+              <ErrorComponent
+                name={"surnameControl"}
+                text={requiredFieldText!}
+              />
             </div>
             {/* Email field */}
             <div class="form-control">
               <label class={labelClass}>
-                Email*
+                {contactForm.email.label}
               </label>
               <input
                 type="email"
-                placeholder="Insert your surnames"
+                placeholder={contactForm.email.placeholder}
                 class={inputClass}
                 name="personEmail"
                 data-required
                 hx-on:input={useScript(handleRequiredField, "personEmail")}
               />
-              <ErrorComponent name={"mailControl"} text={errorText} />
+              <ErrorComponent name={"mailControl"} text={requiredFieldText!} />
             </div>
             {/* Confirm Email field */}
             <div class="form-control">
               <label class={labelClass}>
-                Confirm email*
+                {contactForm.confirmEmail.label}
               </label>
               <input
                 type="text"
-                placeholder="Insert your surnames"
+                placeholder={contactForm.confirmEmail.placeholder}
                 class={inputClass}
                 name="personConfirmEmail"
                 data-required
@@ -331,21 +350,24 @@ export default function ContactForm({
                   "personConfirmEmail",
                 )}
               />
-              <ErrorComponent name={"confirmMailControl"} text={errorText} />
+              <ErrorComponent
+                name={"confirmMailControl"}
+                text={requiredFieldText!}
+              />
               <ErrorComponent
                 id="confirmMailControlMessage"
                 name={"confirmMailControlMessage"}
-                text="Email must be equal"
+                text={mustBeEqualEmailField!}
               />
             </div>
             {/* Confirm Phone number */}
             <div class="form-control">
               <label class={labelClass}>
-                Contact phone number
+                {contactForm.phone.label}
               </label>
               <input
                 type="text"
-                placeholder="Insert your surnames"
+                placeholder={contactForm.phone.placeholder}
                 class={inputClass}
                 name="personPhone"
               />

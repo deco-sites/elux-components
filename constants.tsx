@@ -284,3 +284,88 @@ export const GRID_COL_SPAN_DESKTOP = {
 };
 
 export const TOAST_ID = "toast-cart";
+
+export const LANGUAGE_DIFFS = {
+  EN: {
+    contactForm: {
+      country: {
+        label: "Country*",
+        placeholder: "Select the country",
+      },
+      productCode: {
+        label: "Product code / Model number",
+        placeholder: "Insert the product code/model number",
+      },
+      subject: {
+        label: "Subject",
+        placeholder: "Select the subject",
+      },
+      message: {
+        label: "Message",
+        placeholder: "Insert the message",
+      },
+      label: "Personal data",
+      name: {
+        label: "Name*",
+        placeholder: "Insert your name",
+      },
+      surnames: {
+        label: "Surnames*",
+        placeholder: "Insert your surnames",
+      },
+      email: {
+        label: "Email*",
+        placeholder: "Insert your email",
+      },
+      confirmEmail: {
+        label: "Confirm email*",
+        placeholder: "Confirm email",
+      },
+      phone: {
+        label: "Contact phone number",
+        placeholder: "Insert your contact phone number",
+      },
+    },
+  },
+  ES: {
+    contactForm: {
+      country: {
+        label: "País*",
+        placeholder: "Selecciona el pais",
+      },
+      productCode: {
+        label: "Código de producto/número de modelo",
+        placeholder: "Inserte el código de producto/modelo",
+      },
+      subject: {
+        label: "Asunto",
+        placeholder: "Selecciona el asunto",
+      },
+      message: {
+        label: "Mensaje",
+        placeholder: "Insertar el mensaje",
+      },
+      label: "Datos personales",
+      name: {
+        label: "Nombre*",
+        placeholder: "Inserta tu nombre",
+      },
+      surnames: {
+        label: "Apellidos*",
+        placeholder: "Inserta tus apellidos",
+      },
+      email: {
+        label: "Email*",
+        placeholder: "Inserta tu email",
+      },
+      confirmEmail: {
+        label: "Confirmar email*",
+        placeholder: "Confirma tu email",
+      },
+      phone: {
+        label: "Número de teléfono de contacto",
+        placeholder: "Inserta tu número de teléfono de contacto",
+      },
+    },
+  },
+};

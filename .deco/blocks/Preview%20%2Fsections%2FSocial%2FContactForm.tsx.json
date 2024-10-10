@@ -33,5 +33,12 @@
     }
   },
   "countries": [],
-  "subjects": []
+  "subjects": [],
+  "buttonProps": {
+    "color": "base-100",
+    "hoverColor": "base-100",
+    "borderColor": "base-100",
+    "borderWidth": "0",
+    "fontColor": "base-100"
+  }
 }
