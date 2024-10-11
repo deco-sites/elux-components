@@ -1,0 +1,133 @@
+{
+  "path": "/distribuidores-de-partes",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Seo/SeoV2.tsx",
+      "titleTemplate": "Distribuidores de partes autorizados"
+    },
+    {
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "site/sections/Content/Breadcrumb.tsx",
+      "icon": "home-frigidaire",
+      "iconSize": 16,
+      "fontColor": "primary",
+      "fontSize": "text-xs",
+      "items": [
+        {
+          "label": "Distribuidores de partes autorizados"
+        }
+      ],
+      "spacing": {
+        "desktop": {
+          "top": {
+            "behavior": "split",
+            "size": "extra-small"
+          },
+          "bottom": {
+            "behavior": "split",
+            "size": "none"
+          }
+        },
+        "mobile": {
+          "top": {
+            "behavior": "split",
+            "size": "extra-small"
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "site/sections/Institutional/WhereToBuy.tsx",
+      "title": {
+        "text": "Distribuidores de partes autorizados",
+        "fontColor": "primary",
+        "fontSize": "text-3xl"
+      },
+      "description": {
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel ultricies leo. Nam vel urna at mi ullamcorper sagittis. Aliquam erat volutpat. Maecenas tristique egestas lectus sit amet vehicula.",
+        "fontColor": "base-content",
+        "fontSize": "text-sm"
+      },
+      "spacing": {
+        "mobile": {
+          "top": {
+            "behavior": "split",
+            "size": "extra-large"
+          }
+        },
+        "desktop": {
+          "top": {
+            "behavior": "split",
+            "size": "small"
+          }
+        }
+      },
+      "countryCards": {
+        "cardProps": {
+          "fontColor": "secondary",
+          "titleFontSize": "text-base",
+          "descriptionFontSize": "text-sm",
+          "imagesSizes": {
+            "mobile": {
+              "width": 200,
+              "height": 200
+            },
+            "desktop": {
+              "width": 200,
+              "height": 200
+            }
+          },
+          "hoverColor": "error-content",
+          "hoverColorBorder": "info-content"
+        },
+        "countries": [
+          {
+            "icon": "costa-rica-frigidaire",
+            "countryStores": [],
+            "label": "Costa Rica"
+          },
+          {
+            "icon": "dominican-frigidaire",
+            "countryStores": [],
+            "label": "República Dominicana"
+          },
+          {
+            "icon": "el-salvador-frigidaire",
+            "countryStores": [],
+            "label": "El Salvador"
+          },
+          {
+            "icon": "guatemala-frigidaire",
+            "countryStores": [],
+            "label": "Guatemala"
+          },
+          {
+            "icon": "honduras-frigidaire",
+            "countryStores": [],
+            "label": "Honduras"
+          },
+          {
+            "icon": "nicaragua-frigidaire",
+            "countryStores": [],
+            "label": "Nicaragua"
+          },
+          {
+            "icon": "panama-frigidaire",
+            "countryStores": [],
+            "label": "Panamá"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "Footer"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx",
+  "name": "Where to buy"
+}

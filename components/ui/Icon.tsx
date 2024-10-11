@@ -27,8 +27,6 @@ export type AvailableIcons =
   | "chevron-frigidaire"
   | "email-frigidaire"
   | "headset-frigidaire"
-  | "usa-frigidaire"
-  | "spain-frigidaire"
   | "error-frigidaire"
   | "close-frigidaire"
   | "freezer-frigidaire"
@@ -39,7 +37,16 @@ export type AvailableIcons =
   | "conditioning-frigidaire"
   | "vacuum-frigidaire"
   | "refrigerator-frigidaire"
-  | "wind-frigidaire";
+  | "wind-frigidaire"
+  | "usa-frigidaire"
+  | "spain-frigidaire"
+  | "costa-rica-frigidaire"
+  | "dominican-frigidaire"
+  | "el-salvador-frigidaire"
+  | "guatemala-frigidaire"
+  | "honduras-frigidaire"
+  | "nicaragua-frigidaire"
+  | "panama-frigidaire";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**

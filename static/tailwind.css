@@ -725,6 +725,12 @@ html {
     --tw-bg-opacity: 1;
     background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity)));
   }
+
+  .table-zebra tr.hover:hover,
+  .table-zebra tr.hover:nth-child(even):hover {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-bg-opacity)));
+  }
 }
 .btn {
   display: inline-flex;
@@ -3629,6 +3635,9 @@ details.collapse summary::-webkit-details-marker {
 .pointer-events-none {
   pointer-events: none;
 }
+.invisible {
+  visibility: hidden;
+}
 .collapse {
   visibility: collapse;
 }
@@ -5072,6 +5081,9 @@ details.collapse summary::-webkit-details-marker {
 .pb-2 {
   padding-bottom: 0.5rem;
 }
+.pb-2\.5 {
+  padding-bottom: 0.625rem;
+}
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -5125,6 +5137,12 @@ details.collapse summary::-webkit-details-marker {
 }
 .pt-20 {
   padding-top: 5rem;
+}
+.pt-3 {
+  padding-top: 0.75rem;
+}
+.pt-3\.5 {
+  padding-top: 0.875rem;
 }
 .pt-36 {
   padding-top: 9rem;
@@ -6115,6 +6133,10 @@ input {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.hover\:font-normal:hover {
+  font-weight: 400;
+}
+
 .hover\:\!text-error:hover {
   --tw-text-opacity: 1 !important;
   color: var(--fallback-er,oklch(var(--er)/var(--tw-text-opacity))) !important;
@@ -6219,6 +6241,10 @@ input {
   background-color: rgb(13 23 23 / var(--tw-bg-opacity));
 }
 
+.peer:checked ~ .peer-checked\:pointer-events-none {
+  pointer-events: none;
+}
+
 .peer:checked ~ .peer-checked\:flex {
   display: flex;
 }
@@ -6232,6 +6258,234 @@ input {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.peer:checked ~ .peer-checked\:\!border-accent {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-a,oklch(var(--a)/var(--tw-border-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!border-accent-content {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-ac,oklch(var(--ac)/var(--tw-border-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!border-base-100 {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-border-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!border-base-200 {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-border-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!border-base-300 {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-border-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!border-base-content {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-border-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!border-black {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity)) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!border-error {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-er,oklch(var(--er)/var(--tw-border-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!border-error-content {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-erc,oklch(var(--erc)/var(--tw-border-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!border-info {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-in,oklch(var(--in)/var(--tw-border-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!border-info-content {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-inc,oklch(var(--inc)/var(--tw-border-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!border-neutral {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-n,oklch(var(--n)/var(--tw-border-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!border-neutral-content {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-nc,oklch(var(--nc)/var(--tw-border-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!border-primary {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-p,oklch(var(--p)/var(--tw-border-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!border-primary-content {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-pc,oklch(var(--pc)/var(--tw-border-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!border-secondary {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-s,oklch(var(--s)/var(--tw-border-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!border-secondary-content {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-sc,oklch(var(--sc)/var(--tw-border-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!border-success {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-su,oklch(var(--su)/var(--tw-border-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!border-success-content {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-suc,oklch(var(--suc)/var(--tw-border-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!border-transparent {
+  border-color: transparent !important;
+}
+
+.peer:checked ~ .peer-checked\:\!border-warning {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-wa,oklch(var(--wa)/var(--tw-border-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!border-warning-content {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-wac,oklch(var(--wac)/var(--tw-border-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!border-white {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity)) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!bg-accent {
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!bg-accent-content {
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-ac,oklch(var(--ac)/var(--tw-bg-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!bg-base-100 {
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!bg-base-200 {
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!bg-base-300 {
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-bg-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!bg-base-content {
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-bg-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!bg-black {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity)) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!bg-error {
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-er,oklch(var(--er)/var(--tw-bg-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!bg-error-content {
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-erc,oklch(var(--erc)/var(--tw-bg-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!bg-info {
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-in,oklch(var(--in)/var(--tw-bg-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!bg-info-content {
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-inc,oklch(var(--inc)/var(--tw-bg-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!bg-neutral {
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!bg-neutral-content {
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-nc,oklch(var(--nc)/var(--tw-bg-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!bg-primary {
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!bg-primary-content {
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-pc,oklch(var(--pc)/var(--tw-bg-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!bg-secondary {
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!bg-secondary-content {
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-sc,oklch(var(--sc)/var(--tw-bg-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!bg-success {
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-su,oklch(var(--su)/var(--tw-bg-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!bg-success-content {
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-suc,oklch(var(--suc)/var(--tw-bg-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!bg-transparent {
+  background-color: transparent !important;
+}
+
+.peer:checked ~ .peer-checked\:\!bg-warning {
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-wa,oklch(var(--wa)/var(--tw-bg-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!bg-warning-content {
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-wac,oklch(var(--wac)/var(--tw-bg-opacity))) !important;
+}
+
+.peer:checked ~ .peer-checked\:\!bg-white {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+}
+
 .peer:checked ~ .peer-checked\:bg-base-200 {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity)));
@@ -6239,6 +6493,10 @@ input {
 
 .peer:checked ~ .peer-checked\:pb-0 {
   padding-bottom: 0px;
+}
+
+.peer:checked ~ .peer-checked\:font-normal {
+  font-weight: 400;
 }
 
 .group\/header:has(#open-menu:checked) .group-has-\[\#open-menu\:checked\]\/header\:pointer-events-none {

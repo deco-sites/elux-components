@@ -56,6 +56,8 @@
   "complementaryColors": {
     "base-200": "#EBEBEB",
     "base-300": "#F5F5F5",
-    "base-content": "#848585"
+    "base-content": "#848585",
+    "error-content": "#FCD9DE",
+    "info-content": "#F58C9C"
   }
 }

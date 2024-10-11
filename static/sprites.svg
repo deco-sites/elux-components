@@ -423,5 +423,259 @@
 			d="M2.29992 4.59067C2.29992 3.40734 3.26259 2.44467 4.44592 2.44467V3.44467C3.81392 3.44467 3.29992 3.95867 3.29992 4.59067C3.29992 5.22267 3.81392 5.73667 4.44592 5.73667H9.25325V6.73667H4.44592C3.26259 6.73667 2.29992 5.77401 2.29992 4.59067ZM9.94059 9.26001H5.13325V10.26H9.94059C10.5726 10.26 11.0866 10.774 11.0866 11.406C11.0866 12.038 10.5726 12.552 9.94059 12.552V13.552C11.1239 13.552 12.0866 12.5893 12.0866 11.406C12.0866 10.2227 11.1239 9.26001 9.94059 9.26001ZM12.5399 4.26601V5.26601C13.1719 5.26601 13.6859 5.78001 13.6859 6.41201C13.6859 7.04401 13.1719 7.55801 12.5399 7.55801H1.33325V8.55801H12.5406C13.7239 8.55801 14.6866 7.59534 14.6866 6.41201C14.6866 5.22867 13.7239 4.26601 12.5406 4.26601H12.5399Z"
 			fill="currentColor" />
 	</symbol>
+	<symbol id="costa-rica-frigidaire" viewBox="0 0 20 15" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<g clip-path="url(#clip0_222_776)">
+			<rect width="20" height="15" fill="white" />
+			<g clip-path="url(#clip1_222_776)">
+				<rect width="20" height="15" fill="white" />
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V15H20V0H0Z" fill="#2E42A5" />
+				<mask id="mask0_222_776" style="mask-type:luminance" maskUnits="userSpaceOnUse"
+					x="0" y="0" width="20" height="15">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V15H20V0H0Z" fill="white" />
+				</mask>
+				<g mask="url(#mask0_222_776)">
+					<path d="M0 5H-1V6V9V10H0H20H21V9V6V5H20H0Z" fill="#E31D1C" stroke="#F7FCFF"
+						stroke-width="2" />
+				</g>
+			</g>
+		</g>
+		<defs>
+			<clipPath id="clip0_222_776">
+				<rect width="20" height="15" fill="white" />
+			</clipPath>
+			<clipPath id="clip1_222_776">
+				<rect width="20" height="15" fill="white" />
+			</clipPath>
+		</defs>
+	</symbol>
+	<symbol id="dominican-frigidaire" viewBox="0 0 20 15" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<g clip-path="url(#clip0_222_699)">
+			<rect width="20" height="15" fill="white" />
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V15H20V0H0Z" fill="#C51918" />
+			<mask id="mask0_222_699" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0"
+				y="0" width="20" height="15">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V15H20V0H0Z" fill="white" />
+			</mask>
+			<g mask="url(#mask0_222_699)">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M8.75 0H11.25V6.25H20V8.75H11.25V15H8.75V8.75H0V6.25H8.75V0Z" fill="#F7FCFF" />
+				<rect width="8.75" height="6.25" fill="#4257BF" />
+				<rect x="11.25" y="8.75" width="8.75" height="6.25" fill="#4257BF" />
+				<path
+					d="M8.52301 6.94421L9.14517 7.00376C9.03868 8.11634 9.17706 8.58513 9.40193 8.58513V9.21013C8.62419 9.21013 8.38401 8.39649 8.52301 6.94421Z"
+					fill="#309404" />
+				<path
+					d="M11.5167 6.94421L10.8945 7.00376C11.001 8.11634 10.8626 8.58513 10.6377 8.58513V9.21013C11.4155 9.21013 11.6557 8.39649 11.5167 6.94421Z"
+					fill="#309404" />
+				<rect x="9.20447" y="6.68274" width="0.590909" height="0.923077" fill="#003994" />
+				<path
+					d="M10.1135 7.77881H10.7044V8.24734C10.7044 8.49838 10.5009 8.70189 10.2499 8.70189H10.1135V7.77881Z"
+					fill="#003994" />
+				<rect x="10.0681" y="6.625" width="0.590909" height="0.923077" fill="#DE2110" />
+				<path
+					d="M9.20447 7.77881H9.79538V8.70189H9.65901C9.40797 8.70189 9.20447 8.49838 9.20447 8.24734V7.77881Z"
+					fill="#DE2110" />
+				<path
+					d="M8.95894 6.63085L8.54089 6.16624C8.98236 5.76902 9.44246 5.5625 9.9163 5.5625C10.3902 5.5625 10.8502 5.76902 11.2917 6.16624L10.8737 6.63085C10.5393 6.33001 10.2218 6.1875 9.9163 6.1875C9.61079 6.1875 9.29329 6.33001 8.95894 6.63085Z"
+					fill="#00319C" />
+				<path
+					d="M9.00447 9.74621L8.58643 9.2816C9.02789 8.88438 9.48799 8.67786 9.96184 8.67786C10.4357 8.67786 10.8958 8.88438 11.3372 9.2816L10.9192 9.74621C10.5849 9.44537 10.2674 9.30286 9.96184 9.30286C9.65632 9.30286 9.33882 9.44537 9.00447 9.74621Z"
+					fill="#DE2110" />
+			</g>
+		</g>
+		<defs>
+			<clipPath id="clip0_222_699">
+				<rect width="20" height="15" fill="white" />
+			</clipPath>
+		</defs>
+	</symbol>
+	<symbol id="el-salvador-frigidaire" viewBox="0 0 20 15" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<g clip-path="url(#clip0_222_1122)">
+			<rect width="20" height="15" fill="white" />
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V15H20V0H0Z" fill="#F7FCFF" />
+			<mask id="mask0_222_1122" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0"
+				y="0" width="20" height="15">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V15H20V0H0Z" fill="white" />
+			</mask>
+			<g mask="url(#mask0_222_1122)">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V5H20V0H0Z" fill="#3D58DB" />
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M0 10V15H20V10H0Z" fill="#3D58DB" />
+				<path
+					d="M12.1409 7.41137C12.1409 8.66844 11.1218 9.68749 9.86474 9.68749C8.60768 9.68749 7.58862 8.66844 7.58862 7.41137C7.58862 6.15431 8.60768 5.13525 9.86474 5.13525C11.1218 5.13525 12.1409 6.15431 12.1409 7.41137Z"
+					stroke="#E8AA00" stroke-width="0.625" />
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M8.63172 6.03894C8.63172 6.03894 8.03638 7.01873 8.03638 7.69136C8.03638 8.36398 8.74899 9.20942 9.87016 9.20942C10.9638 9.20942 11.7498 8.55615 11.7736 7.69136C11.7974 6.82656 11.1853 6.21093 11.1853 6.21093C11.1853 6.21093 11.5317 7.45599 11.3585 7.96051C11.1853 8.46503 10.6246 9.07545 9.87016 8.99774C9.11568 8.92002 8.39967 7.99137 8.39967 7.69136C8.39967 7.39134 8.63172 6.03894 8.63172 6.03894Z"
+					fill="#1E601B" />
+				<path d="M8.85034 7.7053H10.8549" stroke="#188396" stroke-width="0.625" />
+				<path d="M9.03687 7.37877H10.7616" stroke="#E8AA00" stroke-width="0.625" />
+				<path d="M10.656 7.75696H9.12084L9.89541 6.47177L10.656 7.75696Z" stroke="#E8AA00"
+					stroke-width="0.625" />
+			</g>
+		</g>
+		<defs>
+			<clipPath id="clip0_222_1122">
+				<rect width="20" height="15" fill="white" />
+			</clipPath>
+		</defs>
+	</symbol>
+	<symbol id="guatemala-frigidaire" viewBox="0 0 20 15" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<g clip-path="url(#clip0_222_1310)">
+			<rect width="20" height="15" fill="white" />
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M14 0H20V15H14V0Z" fill="#58A5FF" />
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H6V15H0V0Z" fill="#58A5FF" />
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M6 0H14V15H6V0Z" fill="white" />
+			<path
+				d="M7.97776 10.6484L7.52368 10.219L12.3283 5.13892L12.7824 5.56838L7.97776 10.6484Z"
+				fill="#C6C6C6" />
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M8.11545 5.06592C8.11545 5.06592 6.57739 5.99415 6.57739 8.32114C6.57739 10.6481 10.322 10.9629 10.322 10.9629C10.322 10.9629 8.08109 9.59614 7.78781 8.61764C7.49452 7.63915 8.11545 5.06592 8.11545 5.06592Z"
+				fill="#5AB92D" />
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M11.9088 5.06592C11.9088 5.06592 13.4469 5.99415 13.4469 8.32114C13.4469 10.6481 9.70234 10.9629 9.70234 10.9629C9.70234 10.9629 12.0572 9.61243 12.3872 8.32114C12.7173 7.02985 11.9088 5.06592 11.9088 5.06592Z"
+				fill="#5AB92D" />
+			<path
+				d="M9.25476 4.74976L9.87721 4.80625C9.85674 5.03177 9.97993 5.26131 10.2845 5.50767C11.265 6.30063 11.7919 7.28978 11.3789 8.41382C11.0793 9.22945 10.6723 9.91813 10.1573 10.4775L9.69748 10.0542C10.1548 9.55747 10.5199 8.93964 10.7923 8.19828C11.0889 7.39096 10.6874 6.63737 9.8915 5.99362C9.438 5.62683 9.21318 5.20794 9.25476 4.74976Z"
+				fill="#5AB92D" />
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M8.85864 6.13057L9.51443 7.98442H9.03238C9.03238 7.98442 8.85864 8.56946 9.18654 8.56946C9.51443 8.56946 11.2042 8.56946 11.2042 8.56946C11.2042 8.56946 11.4239 8.42277 11.314 7.98442C11.2042 7.54607 10.6492 6.33599 10.6492 6.33599C10.6492 6.33599 10.8863 6.13517 10.8863 5.9863C10.8863 5.83744 10.6492 5.82104 10.6492 5.82104H9.15225C8.96118 5.85407 8.85864 6.13057 8.85864 6.13057Z"
+				fill="#EFE298" />
+		</g>
+		<defs>
+			<clipPath id="clip0_222_1310">
+				<rect width="20" height="15" fill="white" />
+			</clipPath>
+		</defs>
+	</symbol>
+	<symbol id="honduras-frigidaire" viewBox="0 0 20 15" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<g clip-path="url(#clip0_222_637)">
+			<rect width="20" height="15" fill="white" />
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V15H20V0H0Z" fill="#F7FCFF" />
+			<mask id="mask0_222_637" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0"
+				y="0" width="20" height="15">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V15H20V0H0Z" fill="white" />
+			</mask>
+			<g mask="url(#mask0_222_637)">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V5H20V0H0Z" fill="#4564F9" />
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M0 10V15H20V10H0Z" fill="#4564F9" />
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M10.5113 8.2074L9.7766 8.59367L9.91692 7.77553L9.32251 7.13644H10.144L10.5113 6.3324L10.8787 7.13644H11.7002L11.1057 7.77553L11.2461 8.59367L10.5113 8.2074Z"
+					fill="#4564F9" />
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M6.76133 6.9574L6.0266 7.34367L6.16692 6.52553L5.57251 5.88644H6.39396L6.76133 5.0824L7.1287 5.88644H7.95015L7.35574 6.52553L7.49606 7.34367L6.76133 6.9574Z"
+					fill="#4564F9" />
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M6.76133 9.4574L6.0266 9.84367L6.16692 9.02553L5.57251 8.38644H6.39396L6.76133 7.5824L7.1287 8.38644H7.95015L7.35574 9.02553L7.49606 9.84367L6.76133 9.4574Z"
+					fill="#4564F9" />
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M14.2613 6.9574L13.5266 7.34367L13.6669 6.52553L13.0725 5.88644H13.894L14.2613 5.0824L14.6287 5.88644H15.4502L14.8557 6.52553L14.9961 7.34367L14.2613 6.9574Z"
+					fill="#4564F9" />
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M14.2613 9.4574L13.5266 9.84367L13.6669 9.02553L13.0725 8.38644H13.894L14.2613 7.5824L14.6287 8.38644H15.4502L14.8557 9.02553L14.9961 9.84367L14.2613 9.4574Z"
+					fill="#4564F9" />
+			</g>
+		</g>
+		<defs>
+			<clipPath id="clip0_222_637">
+				<rect width="20" height="15" fill="white" />
+			</clipPath>
+		</defs>
+	</symbol>
+	<symbol id="nicaragua-frigidaire" viewBox="0 0 20 15" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<g clip-path="url(#clip0_222_1323)">
+			<rect width="20" height="15" fill="white" />
+			<g clip-path="url(#clip1_222_1323)">
+				<rect width="20" height="15" fill="white" />
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V15H20V0H0Z" fill="#F7FCFF" />
+				<mask id="mask0_222_1323" style="mask-type:luminance" maskUnits="userSpaceOnUse"
+					x="0" y="0" width="20" height="15">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V15H20V0H0Z" fill="white" />
+				</mask>
+				<g mask="url(#mask0_222_1323)">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V5H20V0H0Z" fill="#0080EC" />
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M0 10V15H20V10H0Z"
+						fill="#0080EC" />
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M10 5C10.1178 5 10.2337 5.00815 10.3471 5.0239L10.2233 5.82141C10.1502 5.81179 10.0757 5.80682 10 5.80682C9.88991 5.80682 9.78228 5.81732 9.67805 5.83739L9.62019 5.02867C9.74404 5.00979 9.87088 5 10 5ZM10.7201 5.10526L10.5028 5.88273C11.1924 6.0969 11.6932 6.73997 11.6932 7.5C11.6932 7.51868 11.6929 7.53729 11.6923 7.55583L12.497 7.62405C12.499 7.58295 12.5 7.54159 12.5 7.5C12.5 6.36961 11.7498 5.41444 10.7201 5.10526ZM12.1959 8.69598C11.7997 9.42184 11.0541 9.92962 10.1852 9.99324V9.18317C10.6481 9.13281 11.055 8.89586 11.3291 8.5491L12.1959 8.69598ZM7.8605 8.79397C8.27548 9.47865 9.00985 9.9482 9.85698 9.99598V9.18723C9.36327 9.14594 8.92978 8.89281 8.64767 8.51902L7.8605 8.79397ZM7.50226 7.60719C7.50076 7.57165 7.5 7.53591 7.5 7.5C7.5 6.43848 8.1616 5.53148 9.09494 5.16886L9.30361 5.9562C8.71929 6.22019 8.31162 6.80619 8.30686 7.48793L7.50226 7.60719Z"
+						fill="#D0AB00" />
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M9.98424 5.59363L8.27368 8.55036H11.7216L9.98424 5.59363Z" fill="#7CDFFF" />
+					<mask id="mask1_222_1323" style="mask-type:luminance" maskUnits="userSpaceOnUse"
+						x="8" y="5" width="4" height="4">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M9.98424 5.59363L8.27368 8.55036H11.7216L9.98424 5.59363Z"
+							fill="white" />
+					</mask>
+					<g mask="url(#mask1_222_1323)">
+						<path
+							d="M9.99993 9.44896C10.8252 9.44896 11.4943 8.77993 11.4943 7.95465C11.4943 7.12936 10.8252 6.46033 9.99993 6.46033C9.17464 6.46033 8.50562 7.12936 8.50562 7.95465C8.50562 8.77993 9.17464 9.44896 9.99993 9.44896Z"
+							stroke="#E31D1C" stroke-width="0.625" />
+						<path
+							d="M9.99993 9.44896C10.8252 9.44896 11.4943 8.77993 11.4943 7.95465C11.4943 7.12936 10.8252 6.46033 9.99993 6.46033C9.17464 6.46033 8.50562 7.12936 8.50562 7.95465C8.50562 8.77993 9.17464 9.44896 9.99993 9.44896Z"
+							stroke="#FFD018" stroke-width="0.625" />
+						<path
+							d="M9.99993 9.44896C10.8252 9.44896 11.4943 8.77993 11.4943 7.95465C11.4943 7.12936 10.8252 6.46033 9.99993 6.46033C9.17464 6.46033 8.50562 7.12936 8.50562 7.95465C8.50562 8.77993 9.17464 9.44896 9.99993 9.44896Z"
+							stroke="#4EDD00" stroke-width="0.625" />
+						<path
+							d="M9.99993 9.44896C10.8252 9.44896 11.4943 8.77993 11.4943 7.95465C11.4943 7.12936 10.8252 6.46033 9.99993 6.46033C9.17464 6.46033 8.50562 7.12936 8.50562 7.95465C8.50562 8.77993 9.17464 9.44896 9.99993 9.44896Z"
+							stroke="#3D58DB" stroke-width="0.625" />
+						<rect x="8.13635" y="7.63635" width="3.90909" height="1.13636"
+							fill="#3D58DB" />
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M8.39807 8.11934L9.17719 7.34456L9.4163 7.73195L9.58334 7.25952L9.76885 7.61364L9.96371 7.34456L10.2158 7.61364L10.447 7.25952L10.6446 7.61364L10.8713 7.34456L11.401 7.90749L11.4963 8.11934L8.39807 8.2765V8.11934Z"
+							fill="#97C923" />
+					</g>
+				</g>
+			</g>
+		</g>
+		<defs>
+			<clipPath id="clip0_222_1323">
+				<rect width="20" height="15" fill="white" />
+			</clipPath>
+			<clipPath id="clip1_222_1323">
+				<rect width="20" height="15" fill="white" />
+			</clipPath>
+		</defs>
+	</symbol>
+	<symbol id="panama-frigidaire" viewBox="0 0 20 15" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<g clip-path="url(#clip0_222_765)">
+			<rect width="20" height="15" fill="white" />
+			<g clip-path="url(#clip1_222_765)">
+				<rect width="20" height="15" fill="white" />
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V15H20V0H0Z" fill="#F7FCFF" />
+				<mask id="mask0_222_765" style="mask-type:luminance" maskUnits="userSpaceOnUse"
+					x="0" y="0" width="20" height="15">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V15H20V0H0Z" fill="white" />
+				</mask>
+				<g mask="url(#mask0_222_765)">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M10 0V7.5H20V0H10Z"
+						fill="#E31D1C" />
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M14.3881 11.9686L12.949 12.859L13.5077 11.3642L12.2845 10.2325H13.7682L14.3881 8.6156L14.8611 10.2325H16.347L15.2762 11.3642L15.8005 12.859L14.3881 11.9686Z"
+						fill="#E31D1C" />
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M5.63807 5.228L4.19905 6.11845L4.75772 4.62362L3.53455 3.49194H5.01816L5.63807 1.875L6.11114 3.49194H7.59705L6.52618 4.62362L7.05048 6.11845L5.63807 5.228Z"
+						fill="#2E42A5" />
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M0 7.5V15H10V7.5H0Z"
+						fill="#2E42A5" />
+				</g>
+			</g>
+		</g>
+		<defs>
+			<clipPath id="clip0_222_765">
+				<rect width="20" height="15" fill="white" />
+			</clipPath>
+			<clipPath id="clip1_222_765">
+				<rect width="20" height="15" fill="white" />
+			</clipPath>
+		</defs>
+	</symbol>
+
 
 </svg>
