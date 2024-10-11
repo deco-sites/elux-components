@@ -4483,6 +4483,9 @@ details.collapse summary::-webkit-details-marker {
   -moz-column-gap: 2rem;
        column-gap: 2rem;
 }
+.gap-y-8 {
+  row-gap: 2rem;
+}
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));

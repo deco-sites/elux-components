@@ -17,6 +17,8 @@ export const NAVBAR_HEIGHT_MOBILE = "56px";
 export const HEADER_HEIGHT_DESKTOP = "142px";
 export const NAVBAR_HEIGHT_DESKTOP = "72px";
 
+export const WHERE_TO_BUY_CONTENT_ID = "where-to-buy-content";
+
 export const paddingSizes = {
   desktop: {
     top: {

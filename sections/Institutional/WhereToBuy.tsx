@@ -6,15 +6,19 @@ import {
   PEER_CHECKED_BG_COLORS,
   PEER_CHECKED_BORDER_COLORS,
   TEXT_COLORS,
+  WHERE_TO_BUY_CONTENT_ID,
 } from "../../constants.tsx";
 import { clx } from "../../sdk/clx.ts";
 import {
   Colors,
   FontSize,
+  GapSizes,
   TextProps,
   WidthAndHeight,
 } from "../../sdk/types.ts";
 import Container, { SpacingConfig } from "../container/Container.tsx";
+import { Props as ContentProps } from "../../components/social/WhereToBuyContent.tsx";
+import { useComponent } from "../Component.tsx";
 
 export interface Props {
   /**
@@ -37,9 +41,15 @@ export interface Props {
 
 interface CountryCardsProps {
   /**
-   * @title GlobalCardProps
+   * @title Global Country card style
+   * @description All country cards styling options
    */
-  cardProps: CardProps;
+  countryCardStyle: CountryCardStyle;
+  /**
+   * @title Global Store card style
+   * @description All store cards styling options
+   */
+  storeCardStyle: StoreCardStyle;
   /**
    * @title Countries
    */
@@ -61,11 +71,15 @@ interface CountryCardContent {
   countryStores?: CountryStores[];
 }
 
-interface CountryStores {
+export interface CountryStores {
   /**
-   * @title Store image
+   * @title Desktop store image
    */
-  image: ImageWidget;
+  desktopImage: ImageWidget;
+  /**
+   * @title Mobile store image
+   */
+  mobileImage: ImageWidget;
   /**
    * @title Title
    */
@@ -74,9 +88,39 @@ interface CountryStores {
    * @title Description
    */
   description: string;
+  /**
+   * @title Href
+   */
+  href?: string;
+  /**
+   * @title Disable Card Border
+   */
+  disableBorder?: boolean;
 }
 
-interface CardProps {
+interface CountryCardStyle {
+  /**
+   * @title Font color
+   */
+  fontColor: Colors;
+  /**
+   * @title Title Font size
+   * @description text-xs: 12px, text-sm: 14px, text-base: 16px, text-lg: 18px, text-xl: 20px, text-2xl: 24px, text-3xl: 30px
+   */
+  fontSize: FontSize;
+  /**
+   * @title Hover color
+   * @description Bg color when hover country card
+   */
+  hoverColor: Colors;
+  /**
+   * @title Hover Border color
+   * @description Border color when select country card
+   */
+  hoverColorBorder: Colors;
+}
+
+export interface StoreCardStyle {
   /**
    * @title Font color
    */
@@ -96,15 +140,17 @@ interface CardProps {
    */
   imagesSizes: ImageSizes;
   /**
-   * @title Hover color
-   * @description Bg color when hover country card
+   * @title Cards grid (only desktop)
    */
-  hoverColor: Colors;
+  grid: "1" | "2" | "3" | "4";
   /**
-   * @title Hover Border color
-   * @description Border color when hover country card
+   * @title Cards gap
    */
-  hoverColorBorder: Colors;
+  gap: GapSizes;
+  /**
+   * @title Border color
+   */
+  colorBorder: Colors;
 }
 
 interface ImageSizes {
@@ -112,10 +158,14 @@ interface ImageSizes {
   desktop: WidthAndHeight;
 }
 
+const Content = import.meta.resolve(
+  "../../components/social/WhereToBuyContent.tsx",
+);
+
 export default function Support(
   { title, description, spacing, countryCards }: Props,
 ) {
-  const { cardProps, countries } = countryCards;
+  const { storeCardStyle, countries, countryCardStyle } = countryCards;
   return (
     <Container
       spacing={spacing}
@@ -148,7 +198,7 @@ export default function Support(
       )}
       {/** Country Cards */}
       <div class="flex flex-row flex-wrap pt-6 gap-4">
-        {countries?.map(({ label, icon }, index) => {
+        {countries?.map(({ label, icon, countryStores }, index) => {
           const id = `country-${index}`;
           return (
             <div>
@@ -161,14 +211,22 @@ export default function Support(
               <label
                 class={clx(
                   "flex flex-col gap-1 border border-neutral px-4 pb-2.5 pt-3.5 font-light rounded-sm cursor-pointer peer-checked:font-normal hover:font-normal peer-checked:pointer-events-none",
-                  TEXT_COLORS[cardProps.fontColor],
-                  cardProps.descriptionFontSize,
-                  HOVER_BG_COLORS[cardProps.hoverColor],
-                  HOVER_BORDER_COLORS[cardProps.hoverColorBorder],
-                  PEER_CHECKED_BG_COLORS[cardProps.hoverColor],
-                  PEER_CHECKED_BORDER_COLORS[cardProps.hoverColorBorder],
+                  TEXT_COLORS[countryCardStyle.fontColor],
+                  countryCardStyle.fontSize,
+                  HOVER_BG_COLORS[countryCardStyle.hoverColor],
+                  HOVER_BORDER_COLORS[countryCardStyle.hoverColorBorder],
+                  PEER_CHECKED_BG_COLORS[countryCardStyle.hoverColor],
+                  PEER_CHECKED_BORDER_COLORS[countryCardStyle.hoverColorBorder],
                 )}
                 for={id}
+                hx-trigger="click"
+                hx-target={`#${WHERE_TO_BUY_CONTENT_ID}`}
+                hx-swap="innerHTML"
+                hx-select="section>*"
+                hx-post={useComponent<ContentProps>(Content, {
+                  cardStyle: storeCardStyle,
+                  stores: countryStores,
+                })}
               >
                 <Icon id={icon} width={20} height={15} />
                 <div class="relative">
@@ -182,6 +240,8 @@ export default function Support(
           );
         })}
       </div>
+      {/** Store Cards */}
+      <div id={WHERE_TO_BUY_CONTENT_ID}></div>
     </Container>
   );
 }
