@@ -3,6 +3,14 @@ import { clx } from "../../sdk/clx.ts";
 import { ButtonProps, TextProps } from "../../sdk/types.ts";
 import Container, { SpacingConfig } from "../container/Container.tsx";
 import ContactFormComponent from "../../components/social/ContactForm.tsx";
+import { AppContext } from "../../apps/site.ts";
+
+export const loader = (props: Props, _req: Request, ctx: AppContext) => {
+  return {
+    language: ctx.language,
+    ...props,
+  };
+};
 
 export interface Props {
   title: TextProps;
@@ -27,10 +35,6 @@ export interface Props {
    * @description Error text in form
    */
   errorMessages?: ErrorProps;
-  /**
-   * @description Language of the labels and placeholders
-   */
-  language: "ES" | "EN";
   /**
    * @description Spacing config
    */
@@ -63,7 +67,7 @@ export default function ContactForm({
   buttonProps,
   errorMessages,
   language,
-}: Props) {
+}: ReturnType<typeof loader>) {
   return (
     <Container
       spacing={spacing}

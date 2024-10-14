@@ -101,7 +101,6 @@
         "borderWidth": "0",
         "hoverColor": "primary"
       },
-      "language": "ES",
       "errorMessages": {
         "requiredFieldText": "Este campo debe ser completado",
         "mustBeEqualEmailField": "El email debe ser igual"

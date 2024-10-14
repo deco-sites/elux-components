@@ -66,5 +66,6 @@
   },
   "flavor": {
     "framework": "htmx"
-  }
+  },
+  "language": "ES"
 }

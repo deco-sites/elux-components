@@ -18,6 +18,10 @@ export interface Props extends WebsiteProps {
    */
   platform: Platform;
   theme?: Section;
+  /**
+   * @description Language of labels and placeholders
+   */
+  language: "ES" | "EN";
 }
 export type Platform =
   | "vtex"
