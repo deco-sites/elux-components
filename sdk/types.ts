@@ -33,7 +33,9 @@ export type FontSize =
   | "text-lg"
   | "text-xl"
   | "text-2xl"
-  | "text-3xl";
+  | "text-2.5xl"
+  | "text-3xl"
+  | "text-4xl";
 
 export type GapSizes = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "8";
 
@@ -48,7 +50,7 @@ export interface TextProps {
   fontColor: Colors;
   /**
    * @title Font size
-   * @description text-xs: 12px, text-sm: 14px, text-base: 16px, text-lg: 18px, text-xl: 20px, text-2xl: 24px, text-3xl: 30px
+   * @description text-xs: 12px, text-sm: 14px, text-base: 16px, text-lg: 18px, text-xl: 20px, text-2xl: 24px, text-2.5xl: 28px, text-3xl: 30px, text-4xl: 36px,
    */
   fontSize: FontSize;
 }

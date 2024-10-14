@@ -30,6 +30,8 @@ export default {
         "xxs": ["0.625rem", "1rem"], /* 10px */
         "xs": ["0.75rem", "1.2rem"], /* 12px */
         "sm": ["0.875rem", "1.4rem"], /* 14px */
+        "2.5xl": ["1.75rem", "2.31rem"], /* 28px */
+        "4xl": ["2.25rem", "3.15rem"], /* 36px */
       },
       padding: {
         "6.5": "1.625rem", /* 26px */

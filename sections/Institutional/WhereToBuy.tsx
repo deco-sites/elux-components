@@ -178,8 +178,8 @@ export default function Support(
       <h1
         class={clx(
           TEXT_COLORS[title.fontColor ?? "primary"],
-          title.fontSize,
           "font-bold",
+          title.fontSize,
         )}
       >
         {title.text}
