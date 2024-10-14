@@ -10,7 +10,7 @@ import {
   BG_COLORS,
   BORDER_CLASSES,
   BORDER_COLORS,
-  HOVER_BG_COLORS,
+  HOVER_BG_COLORS_WITH_BORDER,
   LANGUAGE_DIFFS,
   TEXT_COLORS,
 } from "../../constants.tsx";
@@ -391,7 +391,7 @@ export default function ContactForm({
               ? BORDER_CLASSES.full[buttonProps.borderWidth]
               : "",
             buttonProps?.hoverColor
-              ? HOVER_BG_COLORS[buttonProps.hoverColor]
+              ? HOVER_BG_COLORS_WITH_BORDER[buttonProps.hoverColor]
               : "",
           )}
         >

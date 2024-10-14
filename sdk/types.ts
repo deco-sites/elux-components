@@ -79,3 +79,8 @@ export interface ButtonProps {
    */
   fontColor: Colors;
 }
+
+export interface WidthAndHeight {
+  width?: number;
+  height?: number;
+}
