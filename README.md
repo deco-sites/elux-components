@@ -42,10 +42,17 @@ deno task update
 - 👥 [Discord](https://deco.cx/discord)
 
 ## Contributing
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5eb950532c8d8de55c8b5edfa5466a37d1c91050
 We are working on the instructions, for now feel free to contribute to this project.
 
 Take a look on this ones:
 - [deco](https://github.com/deco-cx/deco/)
 - [apps](https://github.com/deco-cx/apps/)
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 5eb950532c8d8de55c8b5edfa5466a37d1c91050
