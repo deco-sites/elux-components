@@ -57,13 +57,13 @@ export default function WhereToBuyContent({ cardStyle, stores }: Props) {
               media="(max-width: 640px)"
               src={store.mobileImage}
               width={imagesSizes.mobile.width ?? 327}
-              height={imagesSizes.mobile.width ?? 148}
+              height={imagesSizes.mobile.height ?? 148}
             />
             <Source
               media="(min-width: 640px)"
               src={store.desktopImage}
               width={imagesSizes.desktop.width ?? 333}
-              height={imagesSizes.desktop.width ?? 174}
+              height={imagesSizes.desktop.height ?? 174}
             />
             <img
               src={store.desktopImage}
